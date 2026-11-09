@@ -1,0 +1,6608 @@
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ACT MANAGER PWA CONFIGURATION -->
+
+<link rel="manifest" href="./manifest.json">
+
+<meta name="theme-color" content="#050912">
+
+<meta name="application-name" content="ACT Manager">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-title" content="ACT Manager">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+
+<link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Act Phone Manager</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     ACT MANAGER - PREMIUM LOGIN SCREEN
+====================================================== -->
+
+<div id="login-page" class="act-login-screen">
+
+    <!-- BACKGROUND WORKSHOP -->
+    <div class="act-workshop-bg">
+
+        <div class="workshop-ceiling"></div>
+        <div class="workshop-back-wall"></div>
+
+        <div class="workshop-sign">
+            <span>ACT</span>
+            MOBILE REPAIR & SERVICES
+        </div>
+
+        <div class="workshop-shelf shelf-left">
+            <div class="shelf-phones">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+
+        <div class="workshop-shelf shelf-right">
+            <div class="shelf-phones">
+                <i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+
+        <div class="workshop-bench">
+            <div class="bench-device"></div>
+            <div class="bench-tools">
+                <span>🔧</span>
+                <span>⚙</span>
+                <span>🔩</span>
+            </div>
+        </div>
+
+        <div class="workshop-floor"></div>
+
+        <div class="workshop-glow glow-left"></div>
+        <div class="workshop-glow glow-right"></div>
+        <div class="workshop-vignette"></div>
+
+    </div>
+
+    <!-- RIGHT SIDE MODULES -->
+    <aside class="act-login-sidebar">
+
+        <div class="act-sidebar-heading">
+            <span>ACT ECOSYSTEM</span>
+            <strong>أقسام النظام</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>📱</span>
+            <strong>إدارة الأجهزة</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>🛒</span>
+            <strong>المبيعات</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>📦</span>
+            <strong>المشتريات</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>🎧</span>
+            <strong>الإكسسوارات</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>🔧</span>
+            <strong>الصيانة</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>👥</span>
+            <strong>العملاء</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>👨‍💼</span>
+            <strong>العاملين</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>📊</span>
+            <strong>التقارير</strong>
+        </div>
+
+        <div class="act-sidebar-item">
+            <span>💰</span>
+            <strong>الخزنة والحسابات</strong>
+        </div>
+
+    </aside>
+
+<!-- CENTER LOGIN -->
+<div class="act-login-center">
+
+    <div class="act-login-card">
+
+        <div class="act-login-logo">
+            <span>ACT</span>
+            <i></i>
+        </div>
+
+        <div class="act-login-title">
+            ACT <span>Manager</span>
+        </div>
+
+        <div class="act-login-subtitle">
+            COMPLETE SHOP MANAGEMENT SYSTEM
+        </div>
+
+        <div class="act-login-slogan">
+            إدارة أسهل .. نجاح أكبر
+        </div>
+
+
+        <div class="act-login-form-title">
+            تسجيل الدخول
+        </div>
+
+        <input
+            type="email"
+            id="login-email"
+            placeholder="البريد الإلكتروني"
+            autocomplete="email"
+        >
+
+        <input
+            type="password"
+            id="login-password"
+            placeholder="كلمة المرور"
+            autocomplete="current-password"
+        >
+
+        <!-- PASSWORD RESET BUTTON -->
+        <button
+            id="reset-password-button"
+            type="button"
+        >
+            🔐 نسيت كلمة المرور؟
+        </button>
+
+        <!-- CREATE ACCOUNT BUTTON -->
+        <button
+            id="create-account-button"
+            type="button"
+        >
+            إنشاء حساب جديد
+        </button>
+
+        <!-- EMAIL LOGIN BUTTON -->
+        <button
+            id="email-login-button"
+            type="button"
+            style="display:none;"
+        >
+            🔑 دخول إلى النظام
+            <span>←</span>
+        </button>
+
+        <div class="act-login-or">
+            <span></span>
+            أو
+            <span></span>
+        </div>
+
+        <button
+            id="google-login-button"
+            type="button"
+        >
+            <b>G</b>
+            تسجيل الدخول باستخدام Google
+        </button>
+
+        <div class="login-status">
+            <span class="act-online-dot"></span>
+            SYSTEM ONLINE • SECURE ACCESS
+        </div>
+
+    </div>
+
+    <!-- BOTTOM FEATURES -->
+    <div class="act-login-footer">
+
+        <div>
+            <span>🛡️</span>
+            <strong>بياناتك آمنة</strong>
+        </div>
+
+        <i></i>
+
+        <div>
+            <span>☁️</span>
+            <strong>مزامنة تلقائية</strong>
+        </div>
+
+        <i></i>
+
+        <div>
+            <span>⚡</span>
+            <strong>أداء سريع ومستقر</strong>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="act-login-version">
+    ACT Manager v1.0
+    <span>Mobile Shop Management System</span>
+</div>
+
+</div>
+
+<!-- =====================================================
+     MAIN PAGE
+====================================================== -->
+
+<div
+    id="main-page"
+    style="display: none;"
+>
+
+
+<header class="header">
+
+    <div class="header-glow"></div>
+
+    <div class="header-content">
+
+        <div class="header-icon">
+            📱
+        </div>
+
+        <div>
+
+            <h1>
+                Act Phone Manager
+            </h1>
+
+            <p>
+              إدارة متكاملة.. لخدمة أسرع وأدق
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    
+    <div class="header-status">
+
+        <span></span>
+
+        SYSTEM ONLINE
+
+    </div>
+
+
+
+</header>
+
+
+
+<!-- =================================================
+     OLD SECTION BUTTONS
+================================================== -->
+
+<div
+    class="sections-buttons"
+    style="display: none;"
+>
+
+    <button
+        id="devices-section-button"
+        class="section-button"
+        type="button"
+    >
+
+        <span class="section-icon">
+            📱
+        </span>
+
+        <span class="section-title">
+            الأجهزة والبيع
+        </span>
+
+        <span class="section-description">
+            إدارة الأجهزة والمبيعات
+        </span>
+
+        <span class="section-arrow">
+            ←
+        </span>
+
+    </button>
+
+
+    <button
+        id="maintenance-section-button"
+        class="section-button"
+        type="button"
+    >
+
+        <span class="section-icon">
+            🔧
+        </span>
+
+        <span class="section-title">
+            العملاء والصيانة
+        </span>
+
+        <span class="section-description">
+            متابعة الأجهزة والصيانة
+        </span>
+
+        <span class="section-arrow">
+            ←
+        </span>
+
+    </button>
+
+
+    <button
+        id="employees-section-button"
+        class="section-button"
+        type="button"
+    >
+
+        <span class="section-icon">
+            👨‍🔧
+        </span>
+
+        <span class="section-title">
+            العاملين
+        </span>
+
+        <span class="section-description">
+            إدارة الموظفين والمرتبات
+        </span>
+
+        <span class="section-arrow">
+            ←
+        </span>
+
+    </button>
+
+
+    <div class="header-controls sidebar-theme-control">
+
+        <button
+            id="theme-toggle"
+            class="header-control-button"
+            type="button"
+            title="تغيير المظهر"
+        >
+
+            ☀️
+
+            <span id="theme-toggle-text">
+                Light
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     MAIN CONTENT
+================================================== -->
+
+<main id="app-content">
+
+
+<!-- =================================================
+     HOME PAGE / DASHBOARD
+================================================== -->
+
+<section
+    id="home-section"
+    class="home-section"
+>
+
+<!-- =================================================
+     ACT PREMIUM DASHBOARD CARDS
+================================================== -->
+
+<div class="dashboard-main-grid">
+
+    <!-- SHOP STATUS -->
+    <div class="dashboard-status-section premium-status-section shop-status-card">
+
+        <div class="premium-status-heading">
+
+            <div class="premium-status-brand">
+
+                <div class="premium-status-icon">⌁</div>
+
+                <div>
+                    <span class="premium-status-eyebrow">
+                        ACT SYSTEM · LIVE STATUS
+                    </span>
+
+                    <h2>حالة المحل الآن</h2>
+
+                    <p>التنبيهات التي تحتاج إلى متابعتك</p>
+                </div>
+
+            </div>
+
+            <div class="premium-status-counter">
+                <span id="shop-notifications-count">0</span>
+                <small>تنبيه</small>
+            </div>
+
+        </div>
+
+        <div class="premium-notifications-panel">
+
+            <div class="premium-notifications-toolbar">
+
+                <div class="premium-notifications-label">
+                    <span class="premium-bell-icon">♧</span>
+
+                    <div>
+                        <strong>مركز التنبيهات</strong>
+                        <small>متابعة حالة المحل</small>
+                    </div>
+                </div>
+
+                <button
+                    type="button"
+                    id="shop-notifications-toggle"
+                    aria-expanded="false"
+                >
+                    عرض الكل
+                    <span>⌄</span>
+                </button>
+
+            </div>
+
+            <div
+                id="shop-notifications-list"
+                class="premium-notifications-list"
+                aria-live="polite"
+            >
+                <div class="premium-notification-empty">
+                    جاري فحص بيانات المحل...
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- TODAY ACTIVITY -->
+<div class="dashboard-status-section premium-status-section dashboard-operations-section">
+
+    <div class="premium-status-heading">
+
+        <div class="premium-status-brand">
+
+            <div class="premium-status-icon">⚡</div>
+
+            <div>
+                <span class="premium-status-eyebrow">
+                    ACT SYSTEM · TODAY ACTIVITY
+                </span>
+
+                <h2>آخر العمليات اليوم</h2>
+
+                <p>متابعة أحدث الحركات المالية والبيعية</p>
+            </div>
+
+        </div>
+
+        <div class="premium-status-counter">
+            <span id="dashboard-operations-count">0</span>
+            <small>عملية</small>
+        </div>
+
+    </div>
+
+    <div class="premium-notifications-panel">
+
+        <div class="premium-notifications-toolbar">
+
+            <div class="premium-notifications-label">
+                <span class="premium-bell-icon">⚡</span>
+
+                <div>
+                    <strong>سجل العمليات</strong>
+                    <small>أحدث العمليات المسجلة</small>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                id="dashboard-operations-toggle"
+                class="premium-notifications-toggle"
+                aria-expanded="false"
+            >
+                عرض الكل <span>⌄</span>
+            </button>
+
+        </div>
+
+        <div
+            id="dashboard-latest-operations"
+            class="dashboard-operations-grid premium-notifications-list"
+            aria-live="polite"
+        >
+
+            <div class="dashboard-operation-card withdrawal-operation"
+                 data-operation-type="withdrawal">
+
+                <div class="operation-icon">💰</div>
+
+                <div class="operation-info">
+                    <strong>تحصيل / سحب</strong>
+                    <b>2,500 جنيه</b>
+                    <small>16:45</small>
+                </div>
+
+            </div>
+
+            <div class="dashboard-operation-card expense-operation"
+                 data-operation-type="expense">
+
+                <div class="operation-icon">💸</div>
+
+                <div class="operation-info">
+                    <strong>مصروف</strong>
+                    <b>120 جنيه</b>
+                    <small>14:00</small>
+                </div>
+
+            </div>
+
+            <div class="dashboard-operation-card sale-operation"
+                 data-operation-type="sale">
+
+                <div class="operation-icon">📱</div>
+
+                <div class="operation-info">
+                    <strong>عملية بيع</strong>
+                    <b>650 جنيه</b>
+                    <small>13:40</small>
+                </div>
+
+            </div>
+
+            <div class="dashboard-operation-card deposit-operation"
+                 data-operation-type="deposit">
+
+                <div class="operation-icon">💵</div>
+
+                <div class="operation-info">
+                    <strong>إيداع عميل</strong>
+                    <b>1,000 جنيه</b>
+                    <small>12:05</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- SHOP NOTIFICATIONS MODAL -->
+<div id="shop-notifications-modal" class="shop-notifications-modal" hidden>
+
+    <div class="shop-notifications-modal-content" role="dialog" aria-modal="true" aria-labelledby="shop-modal-title">
+
+        <div class="shop-modal-header">
+            <div>
+                <span>ACT SYSTEM · NOTIFICATIONS</span>
+                <h2 id="shop-modal-title">جميع تنبيهات المحل</h2>
+                <small>متابعة كل ما يحتاج إلى اهتمامك</small>
+            </div>
+
+            <button type="button" id="shop-notifications-modal-close" aria-label="إغلاق">✕</button>
+        </div>
+
+        <div id="shop-notifications-modal-list"></div>
+
+    </div>
+
+</div>
+
+<!-- TODAY OPERATIONS MODAL -->
+<div id="dashboard-operations-modal" class="shop-notifications-modal" hidden>
+
+    <div class="shop-notifications-modal-content" role="dialog" aria-modal="true" aria-labelledby="operations-modal-title">
+
+        <div class="shop-modal-header">
+            <div>
+                <span>ACT SYSTEM · TODAY ACTIVITY</span>
+                <h2 id="operations-modal-title">جميع عمليات اليوم</h2>
+                <small>متابعة الحركات المالية والبيعية</small>
+            </div>
+
+            <button
+                type="button"
+                id="dashboard-operations-modal-close"
+                aria-label="إغلاق"
+            >✕</button>
+        </div>
+
+        <div id="dashboard-operations-modal-list"></div>
+
+    </div>
+
+</div>
+
+<!-- END ACT PREMIUM DASHBOARD CARDS -->
+<!-- =================================================
+     ACT MODULES
+================================================== -->
+
+<div class="dashboard-sections-heading">
+
+    <div class="dashboard-block-icon">
+        🧩
+    </div>
+
+    <div>
+
+        <span>ACT MODULES</span>
+
+        <h2>أقسام النظام</h2>
+
+        <p>الوصول السريع إلى جميع أقسام النظام</p>
+
+    </div>
+
+</div>
+
+<div class="home-grid">
+
+    <button
+        id="home-devices"
+        class="home-card"
+        type="button"
+    >
+        <span class="home-card-icon">📱</span>
+        <strong>الأجهزة والبيع</strong>
+        <small>إدارة الأجهزة والمبيعات</small>
+    </button>
+
+    <button
+        id="home-maintenance"
+        class="home-card"
+        type="button"
+    >
+        <span class="home-card-icon">🔧</span>
+        <strong>العملاء والصيانة</strong>
+        <small>متابعة أجهزة الصيانة</small>
+    </button>
+
+    <button
+        id="home-employees"
+        class="home-card"
+        type="button"
+    >
+        <span class="home-card-icon">👨‍🔧</span>
+        <strong>العاملين</strong>
+        <small>إدارة الموظفين والمرتبات</small>
+    </button>
+
+    <button
+        id="home-sales"
+        class="home-card"
+        type="button"
+    >
+        <span class="home-card-icon">🛒</span>
+        <strong>المبيعات</strong>
+        <small>إدارة عمليات البيع والفواتير</small>
+    </button>
+
+</div>
+
+
+<!-- ACT FINANCIAL DASHBOARD -->
+<section id="act-market-dashboard" class="act-market-dashboard" dir="rtl">
+
+    <div class="act-market-heading">
+        <div>
+            <span class="act-eyebrow">ACT BUSINESS INTELLIGENCE</span>
+            <h2>مؤشرات أداء المحل</h2>
+            <p>تابع حركة المبيعات والمشتريات خلال الفترة المحددة.</p>
+        </div>
+        <div class="act-live-pill">
+            <span></span> LIVE OVERVIEW
+        </div>
+    </div>
+
+    <div class="act-period-toolbar">
+        <span>الفترة:</span>
+        <button type="button" class="act-period-button is-active" data-act-period="7">7 أيام</button>
+        <button type="button" class="act-period-button" data-act-period="30">30 يوم</button>
+        <button type="button" class="act-period-button" data-act-period="90">90 يوم</button>
+    </div>
+
+    <div class="act-kpi-grid">
+
+        <article class="act-kpi-card act-kpi-sales">
+            <div class="act-kpi-top">
+                <span>إجمالي المبيعات</span>
+                <button type="button" class="act-kpi-symbol act-kpi-link" data-act-kpi-link="sales" aria-label="فتح المبيعات" title="فتح المبيعات">↗</button>
+            </div>
+            <strong id="act-kpi-sales-value">—</strong>
+            <div class="act-kpi-foot">
+                <span id="act-kpi-sales-change" class="act-change">جاري الحساب</span>
+                <small>جنيه</small>
+            </div>
+            <div class="act-kpi-spark" id="act-kpi-sales-spark"></div>
+        </article>
+
+        <article class="act-kpi-card act-kpi-purchases">
+            <div class="act-kpi-top">
+                <span>إجمالي المشتريات</span>
+                <button type="button" class="act-kpi-symbol act-kpi-link" data-act-kpi-link="purchases" aria-label="فتح المشتريات" title="فتح المشتريات">↙</button>
+            </div>
+            <strong id="act-kpi-purchases-value">—</strong>
+            <div class="act-kpi-foot">
+                <span id="act-kpi-purchases-change" class="act-change">جاري الحساب</span>
+                <small>جنيه</small>
+            </div>
+            <div class="act-kpi-spark" id="act-kpi-purchases-spark"></div>
+        </article>
+
+        <article class="act-kpi-card act-kpi-net">
+            <div class="act-kpi-top">
+                <span>فرق المبيعات والمشتريات</span>
+                <button type="button" class="act-kpi-symbol act-kpi-link" data-act-kpi-link="reports" aria-label="فتح التقارير" title="فتح التقارير">⇄</button>
+            </div>
+            <strong id="act-kpi-net-value">—</strong>
+            <div class="act-kpi-foot">
+                <span id="act-kpi-net-note" class="act-change">مؤشر مالي مبسط</span>
+                <small>جنيه</small>
+            </div>
+            <div class="act-kpi-progress">
+                <span id="act-kpi-net-progress"></span>
+            </div>
+        </article>
+        <article class="act-kpi-card act-kpi-count">
+            <div class="act-kpi-top">
+                <span>عدد عمليات البيع</span>
+                <span class="act-kpi-symbol">▤</span>
+            </div>
+            <strong id="act-kpi-count-value">—</strong>
+            <div class="act-kpi-foot">
+                <span id="act-kpi-count-change" class="act-change">خلال الفترة</span>
+                <small>عملية</small>
+            </div>
+            <div class="act-kpi-count-caption" id="act-kpi-period-label">آخر 7 أيام</div>
+        </article>
+
+        <article class="act-kpi-card act-kpi-inventory">
+            <div class="act-kpi-top">
+                <span>قيمة الأجهزة المعروضة للبيع</span>
+                <span class="act-kpi-symbol">📱</span>
+            </div>
+            <strong id="act-kpi-inventory-value">—</strong>
+            <div class="act-kpi-foot">
+                <span id="act-kpi-inventory-count" class="act-change">الأجهزة المسجلة للبيع</span>
+                <small>جنيه</small>
+            </div>
+            <div class="act-kpi-count-caption">قيمة الأجهزة وليست مبيعات محققة</div>
+        </article>
+
+    </div>
+
+
+
+    <div class="act-chart-grid">
+
+        <article class="act-chart-panel act-chart-main">
+            <div class="act-chart-header">
+                <div>
+                    <span class="act-eyebrow">SALES TREND</span>
+                    <h3>حركة المبيعات</h3>
+                    <p>تغير المبيعات يومًا بيوم</p>
+                </div>
+                <div class="act-chart-legend">
+                    <span class="act-legend-dot"></span> المبيعات
+                </div>
+            </div>
+
+            <div id="act-sales-line-chart" class="act-sales-line-chart">
+                <div class="act-chart-empty">سيظهر الرسم بعد ربطه ببيانات المبيعات.</div>
+            </div>
+
+            <div id="act-sales-chart-axis" class="act-chart-axis"></div>
+        </article>
+
+        <article class="act-chart-panel">
+            <div class="act-chart-header">
+                <div>
+                    <span class="act-eyebrow">SALES VS PURCHASES</span>
+                    <h3>مقارنة الحركة</h3>
+                    <p>المبيعات مقابل المشتريات</p>
+                </div>
+            </div>
+
+            <div id="act-sales-purchases-chart" class="act-comparison-chart">
+                <div class="act-chart-empty">سيظهر الرسم بعد ربطه بالبيانات.</div>
+            </div>
+
+            <div class="act-compare-legend">
+                <span class="act-legend-sales"></span> مبيعات
+                <span class="act-legend-purchases"></span> مشتريات
+            </div>
+        </article>
+
+    </div>
+
+    <div class="act-dashboard-footnote">
+        ⓘ فرق المبيعات والمشتريات ليس صافي الربح.
+    </div>
+
+</section>
+
+    <!-- DAILY HISTORY -->
+
+    <div class="dashboard-history-section">
+
+        <div class="dashboard-block-heading">
+
+            <div class="dashboard-block-icon">
+                🗓️
+            </div>
+
+            <div>
+
+                <span>
+                    DAILY HISTORY
+                </span>
+
+                <h2>
+                    سجل الأيام السابقة
+                </h2>
+
+                <p>
+                    اليوم يتجدد تلقائيًا، والبيانات القديمة تظل محفوظة بتاريخها.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-current-date">
+
+            <div class="current-date-icon">
+                📅
+            </div>
+
+            <div>
+
+                <span>
+                    تاريخ اليوم
+                </span>
+
+                <strong id="dashboard-current-date">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="dashboard-daily-history"
+            class="dashboard-daily-history"
+        >
+
+            <div class="dashboard-history-empty">
+
+                <span>
+                    🗓️
+                </span>
+
+                <strong>
+                    سجل الأيام السابقة
+                </strong>
+
+                <small>
+                    سيتم حفظ ملخص كل يوم تلقائيًا بتاريخ اليوم.
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     SALES AREA / DEVICES
+================================================== -->
+<section
+    id="devices-main-section"
+    class="sales-area"
+    hidden
+>
+    <div class="section-heading">
+
+        <div class="heading-icon">
+            📱
+        </div>
+<!-- =================================================
+     DEVICE SUB SECTIONS
+================================================== -->
+
+<div class="device-sub-tabs">
+
+    <button
+        id="device-sale-tab"
+        class="device-sub-tab active"
+        type="button"
+    >
+        <span>📱</span>
+        <strong>بيع التلفونات</strong>
+        <small>إدارة أجهزة البيع</small>
+    </button>
+
+    <button
+        id="device-purchase-tab"
+        class="device-sub-tab"
+        type="button"
+    >
+        <span>🛒</span>
+        <strong>مشتريات التلفونات</strong>
+        <small>إدارة أجهزة المشتريات</small>
+    </button>
+
+</div>
+
+
+<div>
+
+    <span class="heading-label">
+        ACT SYSTEM
+    </span>
+
+    <h2>
+        الأجهزة والبيع
+    </h2>
+
+    <p>
+        إدارة أجهزة المحل والمبيعات والعملاء
+    </p>
+
+</div>
+
+</div>
+
+<!-- ================================================= 
+     SALE DEVICES 
+     كل ما يخص بيع التلفونات هنا فقط 
+================================================== --> 
+
+<div 
+    id="sale-devices-section" 
+    class="sale-devices-section" 
+> 
+
+
+    <!-- =================================================
+         PHONE SALE SECTION
+    ================================================== -->
+
+    <div 
+        id="phone-sale-section" 
+        class="phone-sale-section" 
+    >
+
+
+        <!-- =================================================
+             SALE CONTROLS
+        ================================================== -->
+
+        <div class="sales-controls"> 
+
+            <button 
+                id="sale-add-button" 
+                class="add-button" 
+                type="button" 
+            > 
+
+                <span class="button-icon"> 
+                    ＋ 
+                </span> 
+
+                <span> 
+                    إضافة جهاز جديد 
+                </span> 
+
+                <small> 
+                    إضافة بيانات جهاز للبيع 
+                </small> 
+
+            </button> 
+
+
+            <div class="search-wrapper"> 
+
+                <span class="search-icon"> 
+                    🔎 
+                </span> 
+
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="ابحث باسم الجهاز أو صاحب الجهاز" 
+                > 
+
+            </div> 
+
+        </div>
+
+
+        <!-- =================================================
+             DEVICE FORM
+        ================================================== --> 
+
+        <div 
+            id="device-form" 
+            class="device-form" 
+        > 
+
+            <button 
+                id="close-device-form-button" 
+                type="button" 
+            > 
+                ✕ 
+            </button> 
+
+
+            <div class="form-heading"> 
+
+                <div class="form-heading-icon"> 
+                    📱 
+                </div> 
+
+                <div> 
+
+                    <span> 
+                        DEVICE MANAGEMENT 
+                    </span> 
+
+                    <h2> 
+                        بيانات الجهاز 
+                    </h2> 
+
+                </div> 
+
+            </div> 
+
+
+            <div class="form-grid"> 
+
+
+                <div class="form-group"> 
+
+                    <label for="phone-name"> 
+                        اسم الجهاز 
+                    </label> 
+
+                    <input 
+                        type="text" 
+                        id="phone-name" 
+                        placeholder="📱 اسم الجهاز" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="customer-name"> 
+                        اسم صاحب الجهاز 
+                    </label> 
+
+                    <input 
+                        type="text" 
+                        id="customer-name" 
+                        placeholder="👤 اسم صاحب الجهاز" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="receive-date"> 
+                        تاريخ الاستلام 
+                    </label> 
+
+                    <input 
+                        type="date" 
+                        id="receive-date" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="receive-time"> 
+                        وقت الاستلام 
+                    </label> 
+
+                    <input 
+                        type="time" 
+                        id="receive-time" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="problem"> 
+                        عيب الجهاز 
+                    </label> 
+
+                    <input 
+                        type="text" 
+                        id="problem" 
+                        placeholder="⚠️ عيب الجهاز" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="changed-parts"> 
+                        الكرتونه او العلبه
+                    </label> 
+
+                    <input 
+                        type="text" 
+                        id="changed-parts" 
+                        placeholder=" الكرتون موجوده (نعم ، لا...)" 
+                    > 
+
+                </div> 
+
+
+                <div class="form-group"> 
+
+                    <label for="price"> 
+                        سعر الجهاز 
+                    </label> 
+
+                    <input 
+                        type="number" 
+                        id="price" 
+                        placeholder="💰 سعر الجهاز" 
+                    > 
+
+                </div> 
+
+            </div> 
+
+
+            <div class="form-group full"> 
+
+                <label for="notes"> 
+                    ملاحظات 
+                </label> 
+
+                <textarea 
+                    id="notes" 
+                    placeholder="📝 ملاحظات إضافية" 
+                ></textarea> 
+
+            </div> 
+
+
+            <div class="form-actions"> 
+
+                <button 
+    id="save-device-button"
+    class="save-button" 
+    type="button" 
+> 
+    💾 حفظ الجهاز 
+</button>
+
+            </div> 
+
+        </div> 
+
+
+        <div id="devices-list"></div> 
+
+    </div>
+
+</div>
+<!-- =================================================
+     PHONE PURCHASES
+================================================== -->
+
+
+
+<div
+    id="phone-purchases-section"
+    class="phone-purchases-section"
+    style="display: none;"
+>
+
+
+
+<!-- زر الإضافة والبحث في صف واحد -->
+
+<div class="sales-controls">
+
+    <button
+        id="phone-purchase-add-button"
+        class="add-button"
+        type="button"
+    >
+        <span class="button-icon">＋</span>
+
+        <span>
+            إضافة موبايل مشتريات
+        </span>
+
+        <small>
+            إضافة جهاز تم شراؤه للمحل
+        </small>
+    </button>
+
+    <div class="search-wrapper phone-purchases-search">
+
+        <span class="search-icon">🔎</span>
+
+        <input
+            type="text"
+            id="phone-purchases-search-input"
+            placeholder="ابحث باسم الموبايل أو السيريال أو البائع..."
+            autocomplete="off"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- =================================================
+     PHONE PURCHASE FORM
+================================================== -->
+
+<div
+    id="phone-purchase-form"
+    class="device-form"
+    style="display: none;"
+>
+
+    <button
+        id="close-phone-purchase-form"
+        type="button"
+    >
+        ✕
+    </button>
+
+    <div class="form-heading">
+
+        <div class="form-heading-icon">
+            🛒
+        </div>
+
+        <div>
+
+            <span>
+                PHONE PURCHASE
+            </span>
+
+            <h2>
+                بيانات الموبايل المشترى
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-group">
+
+            <label for="purchase-phone-name">
+                اسم الجهاز
+            </label>
+
+            <input
+                type="text"
+                id="purchase-phone-name"
+                placeholder="📱 اسم الجهاز"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="purchase-serial">
+                سيريال الجهاز
+            </label>
+
+            <input
+                type="text"
+                id="purchase-serial"
+                placeholder="🔢 سيريال / IMEI"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="purchase-seller-name">
+                اسم البائع
+            </label>
+
+            <input
+                type="text"
+                id="purchase-seller-name"
+                placeholder="👤 اسم صاحب الجهاز"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="purchase-seller-phone">
+                رقم البائع
+            </label>
+
+            <input
+                type="tel"
+                id="purchase-seller-phone"
+                placeholder="📞 رقم الهاتف"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="purchase-price">
+                سعر الشراء
+            </label>
+
+            <input
+                type="number"
+                id="purchase-price"
+                placeholder="💰 سعر الشراء"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="purchase-date">
+                تاريخ الشراء
+            </label>
+
+            <input
+                type="date"
+                id="purchase-date"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- الملاحظات -->
+
+    <div class="form-group full">
+
+        <label for="purchase-notes">
+            ملاحظات
+        </label>
+
+        <textarea
+            id="purchase-notes"
+            placeholder="📝 ملاحظات عن الجهاز"
+        ></textarea>
+
+    </div>
+
+
+    <!-- أزرار النموذج -->
+
+    <div class="form-actions">
+
+        <button
+            id="save-phone-purchase"
+            class="save-button"
+            type="button"
+        >
+            💾 حفظ المشتريات
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =================================================
+     PURCHASES LIST
+================================================== -->
+
+<div id="phone-purchases-list"></div>
+
+
+</div>
+
+<!-- =================================================
+     CUSTOMERS / MAINTENANCE
+================================================== -->
+
+<section
+    id="customers-section"
+    class="customers-area"
+    style="display: none;"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-icon maintenance-heading-icon">
+            🔧
+        </div>
+
+        <div>
+
+            <span class="heading-label">
+                REPAIR CENTER
+            </span>
+
+            <h2>
+                العملاء والصيانة
+            </h2>
+
+            <p>
+                متابعة حالة الأجهزة داخل مركز الصيانة
+            </p>
+
+        </div>
+
+    </div>
+<!-- MAINTENANCE STATUS -->
+
+<div class="maintenance-buttons">
+
+    <!-- 1. لم يتم الإصلاح -->
+    <button type="button">
+
+        <span class="maintenance-icon">🔴</span>
+
+        <span>
+            لم يتم الإصلاح
+        </span>
+
+        <small>
+            أجهزة لم يتم إصلاحها
+        </small>
+
+    </button>
+
+
+    <!-- 2. قيد الإصلاح -->
+    <button type="button">
+
+        <span class="maintenance-icon">🟡</span>
+
+        <span>
+            قيد الإصلاح
+        </span>
+
+        <small>
+            أجهزة تحت الصيانة
+        </small>
+
+    </button>
+
+
+    <!-- 3. جاهز -->
+    <button type="button">
+
+        <span class="maintenance-icon">🟢</span>
+
+        <span>
+            جاهز
+        </span>
+
+        <small>
+            أجهزة جاهزة للتسليم
+        </small>
+
+    </button>
+
+
+    <!-- 4. تم التسليم -->
+    <button type="button">
+
+        <span class="maintenance-icon">📦</span>
+
+        <span>
+            تم التسليم
+        </span>
+
+        <small>
+            الأجهزة المسلمة للعملاء
+        </small>
+
+    </button>
+
+</div>
+
+
+<!-- شاشة عرض أجهزة الصيانة -->
+
+
+<div
+    id="maintenance-status-view"
+    class="maintenance-status-view"
+    style="display: none;"
+>
+
+<button
+    type="button"
+    id="maintenance-exit-button"
+    class="maintenance-exit-button"
+    aria-label="العودة إلى المزيد"
+>
+    ✕
+</button>
+
+    <h2>أجهزة الصيانة</h2>
+
+    <div
+        id="maintenance-device-list"
+        class="maintenance-device-list"
+    ></div>
+
+</div>
+
+
+</section>
+
+<!-- =================================================
+     EMPLOYEES
+================================================== -->
+
+<section
+    id="employees-section"
+    style="display: none;"
+>
+
+    <button type="button" class="act-extra-back" data-act-extra-back aria-label="العودة إلى المزيد">✕</button>
+
+    <div class="section-heading employee-heading">
+
+        <div class="heading-icon employee-heading-icon">
+            👨‍🔧
+        </div>
+
+        <div>
+
+            <span class="heading-label">
+                STAFF MANAGEMENT
+            </span>
+
+            <h2>
+                إدارة العاملين
+            </h2>
+
+            <p>
+                إدارة الموظفين والحضور والمرتبات والإحصائيات
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="employee-buttons">
+
+
+        <button
+            id="add-employee-button"
+            class="add-button"
+            type="button"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <strong>
+                إضافة عامل جديد
+            </strong>
+
+            <small>
+                تسجيل موظف جديد
+            </small>
+
+        </button>
+
+
+        <button
+            id="employees-attendance-button"
+            class="add-button"
+            type="button"
+        >
+
+            <span>
+                🕐
+            </span>
+
+            <strong>
+                الحضور والغياب
+            </strong>
+
+            <small>
+                متابعة حضور العاملين
+            </small>
+
+        </button>
+
+
+        <button
+            id="employees-salaries-button"
+            class="add-button"
+            type="button"
+        >
+
+            <span>
+                💰
+            </span>
+
+            <strong>
+                المرتبات
+            </strong>
+
+            <small>
+                إدارة رواتب العاملين
+            </small>
+
+        </button>
+
+
+        <button
+            id="employees-statistics-button"
+            class="add-button"
+            type="button"
+        >
+
+            <span>
+                📊
+            </span>
+
+            <strong>
+                الإحصائيات
+            </strong>
+
+            <small>
+                تقارير وإحصائيات الموظفين
+            </small>
+
+        </button>
+
+
+    </div>
+
+
+    <div
+        id="employees-dashboard"
+        class="employees-dashboard"
+    >
+
+        <div class="employee-stat-card">
+
+            <div class="stat-card-icon">
+                👥
+            </div>
+
+            <h3>
+                العاملين
+            </h3>
+
+            <span id="total-employees">
+                0
+            </span>
+
+        </div>
+
+
+        <div class="employee-stat-card">
+
+            <div class="stat-card-icon">
+                🟢
+            </div>
+
+            <h3>
+                الحاضرين اليوم
+            </h3>
+
+            <span id="present-employees">
+                0
+            </span>
+
+        </div>
+
+
+        <div class="employee-stat-card">
+
+            <div class="stat-card-icon">
+                🔴
+            </div>
+
+            <h3>
+                الغائبين اليوم
+            </h3>
+
+            <span id="absent-employees">
+                0
+            </span>
+
+        </div>
+
+
+        <div class="employee-stat-card">
+
+            <div class="stat-card-icon">
+                💰
+            </div>
+
+            <h3>
+                إجمالي المرتبات
+            </h3>
+
+            <span id="total-salaries">
+                0 جنيه
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="employee-form"
+        class="employee-form"
+        style="display: none;"
+    >
+
+        <div class="form-heading">
+
+            <div class="form-heading-icon">
+                👤
+            </div>
+
+            <div>
+
+                <span>
+                    STAFF PROFILE
+                </span>
+
+                <h2>
+                    بيانات العامل
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label for="employee-name">
+                    اسم العامل
+                </label>
+
+                <input
+                    type="text"
+                    id="employee-name"
+                    placeholder="👤 اسم العامل"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="employee-phone">
+                    رقم الهاتف
+                </label>
+
+                <input
+                    type="text"
+                    id="employee-phone"
+                    placeholder="📱 رقم الهاتف"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="employee-job">
+                    الوظيفة
+                </label>
+
+                <input
+                    type="text"
+                    id="employee-job"
+                    placeholder="🔧 الوظيفة"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="employee-start-date">
+                    تاريخ البداية
+                </label>
+
+                <input
+                    type="date"
+                    id="employee-start-date"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="employee-salary">
+                    المرتب الأساسي
+                </label>
+
+                <input
+                    type="number"
+                    id="employee-salary"
+                    placeholder="💰 المرتب الأساسي"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="employee-attendance-code-input">كود الحضور الخاص بالعامل (6 أرقام)</label>
+                <input type="text" id="employee-attendance-code-input" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" autocomplete="off" placeholder="اكتب كود العامل بنفسك" required>
+                <small>احتفظ بالكود وأعطه للعامل فقط. لا يمكن تكرار نفس الكود لعامل آخر.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="employee-shift-start">بداية الشيفت</label>
+                <input type="time" id="employee-shift-start" value="09:00">
+            </div>
+
+            <div class="form-group full">
+
+                <label for="employee-notes">
+                    ملاحظات
+                </label>
+
+                <textarea
+                    id="employee-notes"
+                    placeholder="📝 ملاحظات عن العامل"
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-actions">
+
+            <button
+                id="save-employee-button"
+                class="save-button"
+                type="button"
+            >
+                💾 حفظ العامل
+            </button>
+
+
+            <button
+                id="cancel-employee-button"
+                class="add-button"
+                type="button"
+            >
+                ❌ إلغاء
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="employees-list"
+        class="employees-list"
+    ></div>
+
+
+    <div
+        id="attendance-section"
+        style="display: none;"
+    >
+
+        <h2>
+            🕐 الحضور والغياب
+        </h2>
+
+        <div class="employee-code-checkin">
+            <label for="employee-attendance-code">كود العامل لتسجيل الحضور</label>
+            <div class="employee-code-checkin-row">
+                <input id="employee-attendance-code" type="password" inputmode="numeric" maxlength="6" placeholder="أدخل كود الحضور المكوّن من 6 أرقام" autocomplete="off">
+                <button type="button" id="employee-attendance-submit">تسجيل الحضور</button>
+            </div>
+            <small>كل عامل يسجل حضوره بالكود الخاص به. الغياب يُسجل تلقائيًا بعد موعد بداية الشيفت إذا لم يسجل العامل حضوره.</small>
+        </div>
+        <div
+            id="attendance-list"
+            class="attendance-list"
+        ></div>
+
+    </div>
+
+
+    <div
+        id="salaries-section"
+        style="display: none;"
+    >
+
+        <h2>
+            💰 إدارة المرتبات
+        </h2>
+
+        <div
+            id="salaries-list"
+            class="salaries-list"
+        ></div>
+
+    </div>
+
+
+    <div
+        id="statistics-section"
+        style="display: none;"
+    >
+
+        <h2>
+            📊 إحصائيات العاملين
+        </h2>
+
+        <div
+            id="statistics-list"
+            class="statistics-list"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================================
+     MORE PAGE
+================================================== -->
+
+<section
+    id="more-section"
+    class="more-section"
+    style="display: none;"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-icon">
+            ☰
+        </div>
+
+        <div>
+
+            <span class="heading-label">
+                ACT SYSTEM
+            </span>
+
+            <h2>
+                المزيد
+            </h2>
+
+            <p>
+                جميع أدوات إدارة المحل في مكان واحد
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="more-grid">
+
+
+        <button
+            id="more-accessories"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                🎧
+            </span>
+
+            <strong>
+                الإكسسوارات
+            </strong>
+
+            <small>
+                إدارة مخزون الإكسسوارات
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-maintenance"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                🔧
+            </span>
+
+            <strong>
+                الصيانة
+            </strong>
+
+            <small>
+                متابعة أجهزة الصيانة
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-customers"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                👥
+            </span>
+
+            <strong>
+                العملاء
+            </strong>
+
+            <small>
+                ملفات العملاء والفواتير
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-employees"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                👨‍💼
+            </span>
+
+            <strong>
+                الموظفين
+            </strong>
+
+            <small>
+                الموظفين والحضور والمرتبات
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-safe"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                💰
+            </span>
+
+            <strong>
+                الخزنة
+            </strong>
+
+            <small>
+                متابعة حركة الأموال
+            </small>
+
+        </button>
+
+
+        <!-- =================================================
+             WALLET DEPOSIT / WITHDRAW
+        ================================================== -->
+
+        <button
+            id="more-wallet"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                💳
+            </span>
+
+            <strong>
+                إيداع / سحب المحفظة
+            </strong>
+
+            <small>
+                إدارة عمليات المحفظة
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-reports"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                📊
+            </span>
+
+            <strong>
+                التقارير
+            </strong>
+
+            <small>
+                تقارير المبيعات والمخزون
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-day-close"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                🔒
+            </span>
+
+            <strong>
+                إقفال اليوم
+            </strong>
+
+            <small>
+                ملخص وإقفال حركة اليوم
+            </small>
+
+        </button>
+
+
+        <button
+            id="more-settings"
+            class="more-card"
+            type="button"
+        >
+
+            <span class="more-card-icon">
+                ⚙️
+            </span>
+
+            <strong>
+                الإعدادات
+            </strong>
+
+            <small>
+                إعدادات النظام
+            </small>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ACT CUSTOMER MANAGEMENT MODULE -->
+<section id="customer-management-section" class="act-extra-section act-customer-module" style="display:none;" dir="rtl">
+  <button type="button" class="act-extra-back" data-act-extra-back>العودة إلى المزيد</button>
+  <header class="act-module-heading"><span class="act-module-icon">👥</span><div><span class="act-eyebrow">CUSTOMER RELATIONSHIP</span><h1>إدارة العملاء</h1><p>ملفات العملاء وبيانات التواصل وسجل الفواتير المرتبطة بهم</p></div></header>
+  <div class="act-module-stats" id="act-customer-stats"></div>
+  <form id="act-customer-form" class="act-extra-form act-customer-form">
+    <input id="act-customer-name" required maxlength="100" placeholder="اسم العميل">
+    <input id="act-customer-phone" required inputmode="tel" maxlength="25" placeholder="رقم الهاتف">
+    <input id="act-customer-email" type="email" maxlength="120" placeholder="البريد الإلكتروني (اختياري)">
+    <input id="act-customer-address" maxlength="180" placeholder="العنوان (اختياري)">
+    <textarea id="act-customer-notes" maxlength="600" placeholder="ملاحظات عن العميل"></textarea>
+    <div class="act-customer-form-actions"><button type="submit" id="act-customer-save">💾 حفظ العميل</button><button type="button" id="act-customer-cancel" class="act-secondary-button">إلغاء</button></div>
+  </form>
+  <div class="act-module-toolbar"><input id="act-customer-search" class="act-extra-search" placeholder="ابحث بالاسم أو الهاتف أو البريد"><span id="act-customer-count"></span></div>
+  <div id="act-customer-list" class="act-extra-list"></div>
+</section>
+
+<!-- ACT CASHBOX OVERVIEW -->
+<section id="safe-overview-section" class="act-extra-section act-safe-module" style="display:none;" dir="rtl">
+  <button type="button" class="act-extra-back" data-act-extra-back>العودة إلى المزيد</button>
+  <header class="act-module-heading"><span class="act-module-icon">💰</span><div><span class="act-eyebrow">CASHBOX OVERVIEW</span><h1>الخزنة والحسابات</h1><p>ملخص الإيداعات والسحوبات وحركة الأموال المسجلة في المحفظة</p></div></header>
+  <div id="act-safe-stats" class="act-module-stats"></div>
+  <div class="act-safe-toolbar"><button type="button" id="act-safe-open-wallet">💳 فتح عمليات المحفظة</button><button type="button" id="act-safe-refresh">↻ تحديث الملخص</button></div>
+  <div class="act-settings-backup-heading"><span class="act-module-icon">🧾</span><div><h2>أحدث حركات الخزنة</h2><p>آخر عمليات الإيداع والسحب المحفوظة</p></div></div>
+  <div id="act-safe-transactions" class="act-extra-list"></div>
+</section>
+
+<!-- ACT SETTINGS & DEVICE BACKUP -->
+<section id="settings-section" class="act-extra-section act-settings-module" style="display:none;" dir="rtl">
+  <button type="button" class="act-extra-back" data-act-extra-back>العودة إلى المزيد</button>
+  <header class="act-module-heading"><span class="act-module-icon">⚙️</span><div><span class="act-eyebrow">SYSTEM CONTROL CENTER</span><h1>إعدادات النظام</h1><p>تخصيص البرنامج وإدارة الأمان والنسخ الاحتياطي والتطبيق</p></div></header>
+  <div class="act-settings-grid">
+    <article class="act-settings-card"><span class="act-settings-icon">🌐</span><div><h3>لغة البرنامج</h3><p>تغيير لغة واجهة النظام</p></div><select id="act-settings-language"><option value="ar">العربية</option><option value="en">English</option></select></article>
+    <article class="act-settings-card"><span class="act-settings-icon">🎨</span><div><h3>مظهر البرنامج</h3><p>التبديل بين الوضع الداكن والفاتح</p></div><select id="act-settings-theme"><option value="dark">داكن</option><option value="light">فاتح</option></select></article>
+    <article class="act-settings-card"><span class="act-settings-icon">🔔</span><div><h3>إشعارات النظام</h3><p id="act-notification-permission-status">إدارة إذن إشعارات المتصفح</p></div><button type="button" id="act-enable-notifications">تفعيل الإشعارات</button></article>
+    <article class="act-settings-card"><span class="act-settings-icon">📲</span><div><h3>تثبيت ACT Manager</h3><p id="act-pwa-status">استخدم البرنامج كتطبيق على الهاتف أو الكمبيوتر</p></div><button type="button" id="act-install-app">تثبيت التطبيق</button></article>
+    <article class="act-settings-card"><span class="act-settings-icon">🔄</span><div><h3>فحص تحديث التطبيق</h3><p>التحقق من وجود نسخة أحدث من ملفات التطبيق</p></div><button type="button" id="act-check-update">فحص التحديثات</button></article>
+    <article class="act-settings-card"><span class="act-settings-icon">💾</span><div><h3>حفظ التفضيلات</h3><p>تطبيق اللغة والمظهر المختارين</p></div><button type="button" id="act-save-settings">حفظ الإعدادات</button></article>
+    <article class="act-settings-card"><span class="act-settings-icon">🛡️</span><div><h3>حماية مساحة بيانات البرنامج</h3><p id="act-storage-status">طلب الاحتفاظ بتخزين ACT ومنع المتصفح من حذفه تلقائيًا قدر الإمكان.</p></div><button type="button" id="act-protect-storage">حماية التخزين وفحص المساحة</button></article>
+  </div>
+  <div class="act-settings-backup-heading"><span class="act-module-icon">🗄️</span><div><h2>النسخ الاحتياطي للبيانات</h2><p>احتفظ بملف منفصل من بيانات ACT الموجودة على هذا الجهاز.</p></div></div>
+  <div class="act-extra-item"><div><strong>إنشاء نسخة احتياطية</strong><small>تصدير بيانات ACT المحفوظة محليًا إلى ملف JSON يمكنك الاحتفاظ به على الهاتف أو الكمبيوتر.</small></div><button type="button" id="act-export-backup">تنزيل نسخة احتياطية</button></div>
+  <div class="act-extra-item"><div><strong>استعادة نسخة احتياطية</strong><small>استعادة ملف سابق. سيتم استبدال مفاتيح ACT المطابقة الموجودة على هذا الجهاز.</small></div><input type="file" id="act-import-backup" accept="application/json,.json"></div>
+  <div id="act-backup-status" class="act-extra-note" role="status">الحفظ التلقائي يعمل حسب إعدادات كل قسم. النسخة الاحتياطية تحميك عند تغيير الجهاز أو المتصفح.</div>
+</section>
+</main>
+
+
+
+<!-- ACT MANAGER — PREMIUM TOP NAVIGATION -->
+<nav id="bottom-navigation" class="bottom-navigation act-top-navigation" aria-label="التنقل الرئيسي" dir="rtl">
+
+    <!-- BRAND — DESKTOP ONLY -->
+    <div id="act-nav-brand" class="act-nav-brand">
+        <div class="act-nav-brand-icon">📱</div>
+        <div class="act-nav-brand-name">
+            <strong>ACT Manager</strong>
+            <span>إدارة أسهل.. نجاح أكبر</span>
+        </div>
+    </div>
+
+    <!-- DESKTOP SEARCH -->
+    <div class="act-nav-search">
+
+        <span class="act-nav-search-icon">⌕</span>
+
+        <input
+            id="act-nav-search"
+            type="search"
+            placeholder="ابحث عن أي شيء..."
+            aria-label="البحث"
+            autocomplete="off"
+        >
+
+    </div>
+
+    <!-- DESKTOP NAVIGATION -->
+    <div class="act-nav-links">
+
+        <button id="nav-home" class="bottom-nav-button active" type="button" data-section="home-section">
+            <span class="bottom-nav-icon">⌂</span>
+            <span class="bottom-nav-label">الرئيسية</span>
+        </button>
+
+        <button id="nav-sales" class="bottom-nav-button" type="button" data-section="sales">
+            <span class="bottom-nav-icon">🛒</span>
+            <span class="bottom-nav-label">المبيعات</span>
+        </button>
+
+        <button id="nav-purchases" class="bottom-nav-button" type="button" data-section="purchases">
+            <span class="bottom-nav-icon">▤</span>
+            <span class="bottom-nav-label">المشتريات</span>
+        </button>
+
+        <button id="nav-devices" class="bottom-nav-button" type="button" data-section="devices">
+            <span class="bottom-nav-icon">📱</span>
+            <span class="bottom-nav-label">الأجهزة</span>
+        </button>
+
+        <button id="nav-account" class="bottom-nav-button" type="button">
+            <span class="bottom-nav-icon">👤</span>
+            <span class="bottom-nav-label">حسابي</span>
+        </button>
+
+        <button id="nav-more" class="bottom-nav-button" type="button" data-section="more-section">
+            <span class="bottom-nav-icon">☰</span>
+            <span class="bottom-nav-label">المزيد</span>
+        </button>
+
+    </div>
+
+    <!-- MOBILE + DESKTOP ACTIONS -->
+    <div class="act-nav-left">
+
+        <!-- MOBILE MENU -->
+        <button
+            id="mobile-nav-menu-toggle"
+            class="mobile-nav-icon-button"
+            type="button"
+            aria-label="قائمة الأقسام"
+            aria-expanded="false"
+            aria-controls="mobile-nav-menu">
+
+            ☰
+
+        </button>
+
+        <!-- MOBILE SEARCH -->
+        <button
+            id="mobile-search-toggle"
+            class="mobile-nav-icon-button"
+            type="button"
+            aria-label="البحث"
+            aria-expanded="false"
+            aria-controls="act-nav-search">
+
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-4-4"></path>
+            </svg>
+
+        </button>
+
+        <!-- NOTIFICATIONS -->
+        <div class="notification-wrapper">
+
+            <button
+                id="notification-bell-button"
+                class="notification-bell-button"
+                type="button"
+                aria-label="الإشعارات"
+                title="الإشعارات"
+                aria-expanded="false"
+                aria-controls="notification-panel">
+
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                    <path d="M10 21h4"></path>
+                </svg>
+
+                <span id="notification-unread-count"
+                      class="notification-unread-count"
+                      style="display:none;">0</span>
+
+            </button>
+
+            <div id="notification-panel" class="notification-panel" hidden>
+
+                <div class="notification-panel-header">
+                    <strong>الإشعارات</strong>
+                    <button id="notification-mark-all-read" type="button">قراءة الكل</button>
+                </div>
+
+                <div id="notification-list" class="notification-list">
+                    <div class="notification-empty">لا توجد إشعارات حاليًا</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROFILE -->
+        <div id="top-profile" class="top-profile">
+
+            <button
+                id="top-profile-toggle"
+                class="top-profile-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="top-profile-dropdown">
+
+                <img id="top-profile-photo" src="" alt="صورة الحساب">
+
+                <span class="mobile-profile-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M5 21a7 7 0 0 1 14 0"></path>
+                    </svg>
+                </span>
+
+                <span class="top-profile-info">
+                    <strong id="top-profile-name">اسم المستخدم</strong>
+                    <small>مدير النظام</small>
+                </span>
+
+                <span class="top-profile-arrow">⌄</span>
+
+            </button>
+
+            <div id="top-profile-dropdown" class="top-profile-dropdown" hidden>
+
+                <div class="top-profile-dropdown-heading">
+                    <strong id="top-profile-menu-name">اسم المستخدم</strong>
+                    <small id="top-profile-menu-email"></small>
+                </div>
+
+                <button type="button" data-top-profile-action="account">
+                    👤 الملف الشخصي
+                </button>
+
+                <button type="button" data-top-profile-action="logout">
+                    ↪ تسجيل الخروج
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- MOBILE LOGOUT -->
+        <button
+            id="mobile-nav-logout"
+            class="mobile-nav-icon-button mobile-nav-logout"
+            type="button"
+            aria-label="تسجيل الخروج"
+            title="تسجيل الخروج">
+
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 17l5-5-5-5"></path>
+                <path d="M15 12H3"></path>
+                <path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path>
+            </svg>
+
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU PANEL -->
+    <div id="mobile-nav-menu" class="mobile-nav-menu" hidden>
+        <!-- سيتم توصيل أقسام القائمة في خطوة JavaScript -->
+    </div>
+
+    <!-- CURRENT PAGE -->
+    <div id="act-nav-page" class="act-nav-page" hidden>
+        <strong id="act-nav-page-title">الرئيسية</strong>
+        <span id="act-nav-page-description">
+            لوحة التحكم الرئيسية لنظام ACT Manager
+        </span>
+    </div>
+
+</nav>
+<!-- END ACT MANAGER TOP NAVIGATION -->
+
+
+
+
+
+
+
+<!-- ACT ACCESSORIES INVENTORY -->
+<section id="accessories-section" class="act-extra-section" style="display:none;">
+  <button type="button" class="act-extra-back" data-act-extra-back>العودة إلى المزيد</button>
+  <header class="act-module-heading"><span class="act-module-icon">🎧</span><div><span class="act-eyebrow">ACCESSORIES INVENTORY</span><h1>إدارة الإكسسوارات</h1><p>إدارة الأصناف والمخزون وأسعار الشراء والبيع وحركة الصرف</p></div></header>
+  <div class="act-module-stats" id="act-accessory-stats"></div>
+  <form id="accessory-form" class="act-extra-form act-accessory-form">
+    <input id="accessory-name" required maxlength="100" placeholder="اسم الإكسسوار">
+    <input id="accessory-code" maxlength="60" placeholder="كود الصنف (اختياري)">
+    <input id="accessory-quantity" type="number" min="0" step="1" required placeholder="الكمية">
+    <input id="accessory-cost" type="number" min="0" step="0.01" required placeholder="سعر الشراء">
+    <input id="accessory-price" type="number" min="0" step="0.01" required placeholder="سعر البيع">
+    <div class="act-accessory-form-actions"><button type="submit" id="accessory-save-button">💾 حفظ الصنف</button><button type="button" id="accessory-cancel-edit" class="act-secondary-button">إلغاء التعديل</button></div>
+  </form>
+  <div class="act-module-toolbar"><input id="accessory-search" class="act-extra-search" placeholder="ابحث عن إكسسوار بالاسم أو الكود"><span id="accessory-result-count"></span></div>
+  <div id="accessory-list" class="act-extra-list"></div>
+  <div class="act-settings-backup-heading"><span class="act-module-icon">🔄</span><div><h2>آخر حركة مخزون</h2><p>مراجعة الإضافات وعمليات الصرف والتسوية</p></div></div>
+  <div id="accessory-movements-list" class="act-extra-list"></div>
+</section>
+<!-- ACT GENERAL REPORTS -->
+<section id="general-reports-section" class="act-extra-section" style="display:none;">
+  <button type="button" class="act-extra-back" data-act-extra-back>العودة إلى المزيد</button>
+  <header><h1>تقارير المحل</h1><p>ملخص البيانات المحفوظة على هذا الجهاز</p></header>
+  <div id="general-reports-content" class="act-extra-list"></div>
+  <button type="button" id="general-reports-refresh">تحديث التقارير</button>
+</section>
+
+<!-- =================================================
+     🔒 PREMIUM DAY CLOSE / DAILY CLOSING
+================================================== -->
+
+<section
+    id="day-close-section"
+    class="premium-day-close"
+    style="display:none;"
+>
+
+    <!-- BACK -->
+   <button
+    id="day-close-back-button"
+    class="day-close-back day-close-exit"
+    type="button"
+    aria-label="العودة إلى المزيد"
+>
+    ✕
+</button>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <div class="day-close-hero">
+
+        <div class="day-close-hero-glow"></div>
+
+        <div class="day-close-hero-content">
+
+            <div class="day-close-hero-icon">
+                🔒
+            </div>
+
+            <div class="day-close-hero-text">
+
+                <span class="day-close-hero-label">
+                    DAILY CLOSING
+                </span>
+
+                <h1>
+                    إقفال اليوم
+                </h1>
+
+                <p>
+                    مراجعة حركة اليوم وحفظ سجل الأيام السابقة
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="day-close-live-status">
+
+            <span class="day-close-live-dot"></span>
+
+            <span>
+                النظام يعمل
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         CURRENT DAY
+    ================================================== -->
+
+    <div
+        id="day-close-current"
+        class="day-close-current-card"
+    >
+
+        <div class="day-close-section-heading">
+
+            <div class="day-close-heading-icon">
+                📊
+            </div>
+
+            <div>
+
+                <span>
+                    TODAY'S OVERVIEW
+                </span>
+
+                <h2>
+                    جرد حركة اليوم
+                </h2>
+
+                <p id="day-close-current-date">
+                    جاري تحميل تاريخ اليوم...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <div
+            id="day-close-current-summary"
+            class="day-close-summary-grid"
+        ></div>
+
+
+        <!-- CURRENT DAY FOOTER -->
+
+        <div class="day-close-current-footer">
+
+            <div class="day-close-footer-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    حركة اليوم
+                </strong>
+
+                <span>
+                    جميع البيانات المعروضة تخص اليوم الحالي
+                </span>
+
+            </div>
+            <button type="button" id="manual-day-close-button" class="act-manual-close-button">🔒 حفظ إقفال اليوم</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         PREVIOUS DAYS
+    ================================================== -->
+
+    <div
+        id="previous-days-section"
+        class="previous-days-container"
+    >
+
+        <div class="day-close-section-heading archive-heading">
+
+            <div class="day-close-heading-icon">
+                📚
+            </div>
+
+            <div>
+
+                <span>
+                    ARCHIVE
+                </span>
+
+                <h2>
+                    سجل الأيام السابقة
+                </h2>
+
+                <p>
+                    استعرض الجرد المحفوظ حسب الشهر واليوم
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="previous-days-list"
+            class="previous-days-list"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================================
+     WALLET PAGE
+================================================== -->
+
+<section
+    id="wallet-section"
+    class="wallet-section"
+    style="display:none;"
+>
+
+<button
+    id="wallet-close-button"
+    class="wallet-close-button"
+    type="button"
+    aria-label="إغلاق المحفظة"
+>
+    ×
+</button>
+
+    <!-- HEADER -->
+
+    <div class="section-heading">
+
+        <div class="heading-icon">
+            💳
+        </div>
+
+        <div>
+
+            <span class="heading-label">
+                ACT WALLET SYSTEM
+            </span>
+
+            <h2>
+                إيداع / سحب المحفظة
+            </h2>
+
+            <p>
+                إدارة عمليات المحفظة والخدمات المالية
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+<!-- =================================================
+     💳 ACT WALLET — BALANCE SUMMARY
+================================================== -->
+
+<div class="wallet-balance-summary" aria-label="ملخص رصيد الخزنة">
+    <article class="wallet-balance-card wallet-balance-card-main">
+        <span>الرصيد الحالي</span>
+        <strong id="wallet-current-balance">0.00 ج.م</strong>
+    </article>
+    <article class="wallet-balance-card">
+        <span>إجمالي الإيداعات</span>
+        <strong id="wallet-total-deposit">0.00 ج.م</strong>
+    </article>
+    <article class="wallet-balance-card">
+        <span>إجمالي السحوبات</span>
+        <strong id="wallet-total-withdraw">0.00 ج.م</strong>
+    </article>
+</div>
+
+
+
+    <!-- WALLET OPERATIONS -->
+
+    <div class="wallet-operations-grid">
+
+
+        <!-- السحب -->
+
+        <button
+            id="wallet-withdraw-button"
+            class="wallet-operation-card"
+            type="button"
+            data-wallet-operation="withdraw"
+        >
+
+            <span class="wallet-operation-icon">
+                💸
+            </span>
+
+            <strong>
+                السحب
+            </strong>
+
+            <small>
+                تسجيل عملية سحب من المحفظة
+            </small>
+
+        </button>
+
+
+        <!-- الإيداع -->
+
+        <button
+            id="wallet-deposit-button"
+            class="wallet-operation-card"
+            type="button"
+            data-wallet-operation="deposit"
+        >
+
+            <span class="wallet-operation-icon">
+                💰
+            </span>
+
+            <strong>
+                الإيداع
+            </strong>
+
+            <small>
+                تسجيل عملية إيداع في المحفظة
+            </small>
+
+        </button>
+
+
+        <!-- الشحن -->
+
+        <button
+            id="wallet-recharge-button"
+            class="wallet-operation-card"
+            type="button"
+            data-wallet-operation="recharge"
+        >
+
+            <span class="wallet-operation-icon">
+                📱
+            </span>
+
+            <strong>
+                الشحن
+            </strong>
+
+            <small>
+                إدارة عمليات شحن الرصيد
+            </small>
+
+        </button>
+
+
+        <!-- الفواتير -->
+
+        <button
+            id="wallet-bills-button"
+            class="wallet-operation-card"
+            type="button"
+            data-wallet-operation="bills"
+        >
+
+            <span class="wallet-operation-icon">
+                🧾
+            </span>
+
+            <strong>
+                الفواتير
+            </strong>
+
+            <small>
+                تسجيل ومتابعة دفع الفواتير
+            </small>
+
+        </button>
+
+
+        <!-- التحويل -->
+
+        <button
+            id="wallet-transfer-button"
+            class="wallet-operation-card"
+            type="button"
+            data-wallet-operation="transfer"
+        >
+
+            <span class="wallet-operation-icon">
+                🔄
+            </span>
+
+            <strong>
+                التحويل
+            </strong>
+
+            <small>
+                تسجيل عملية تحويل
+            </small>
+
+        </button>
+
+
+    </div>
+
+
+    <!-- =================================================
+         WALLET OPERATION VIEW
+    ================================================== -->
+
+    <div
+        id="wallet-operation-view"
+        class="wallet-operation-view"
+        style="display:none;"
+    >
+
+        <div class="wallet-view-header">
+
+            <div>
+
+                <span class="wallet-view-label">
+                    WALLET OPERATION
+                </span>
+
+                <h3 id="wallet-operation-title">
+                    عملية المحفظة
+                </h3>
+
+                <p id="wallet-operation-description">
+                    تسجيل عملية جديدة
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="wallet-form-card">
+
+            <div class="wallet-form-grid">
+
+
+              <div class="wallet-field">
+
+    <label for="wallet-account">
+        الحساب / الرقم
+    </label>
+
+    <div class="wallet-account-row">
+
+        <input
+            type="text"
+            id="wallet-account"
+            placeholder="📱 رقم الحساب أو الهاتف"
+        >
+
+        <button
+            id="wallet-service-button"
+            class="wallet-service-button"
+            type="button"
+        >
+            🔄 التحويل
+        </button>
+
+    </div>
+
+</div>
+
+
+                <div class="wallet-field">
+
+                    <label for="wallet-amount">
+                        المبلغ
+                    </label>
+
+                    <input
+                        type="number"
+                        id="wallet-amount"
+                        min="0"
+                        step="0.01"
+                        placeholder="💰 المبلغ بالجنيه"
+                    >
+
+                </div>
+
+
+                <div class="wallet-field">
+
+                    <label for="wallet-service">
+                        الخدمة
+                    </label>
+
+                    <input
+                        type="text"
+                        id="wallet-service"
+                        placeholder="📋 اسم الخدمة"
+                    >
+
+                </div>
+
+
+                <div class="wallet-field wallet-field-full">
+
+                    <label for="wallet-notes">
+                        ملاحظات
+                    </label>
+
+                    <textarea
+                        id="wallet-notes"
+                        rows="4"
+                        placeholder="📝 ملاحظات العملية..."
+                    ></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="wallet-form-actions">
+
+                <button
+                    id="wallet-cancel-operation"
+                    type="button"
+                    class="wallet-secondary-button"
+                >
+                    ↩️ رجوع
+                </button>
+
+
+                <button
+                    id="wallet-save-operation"
+                    type="button"
+                    class="wallet-primary-button"
+                >
+                    💾 حفظ العملية
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         WALLET TRANSACTIONS
+    ================================================== -->
+
+    <div
+        id="wallet-transactions-area"
+        class="wallet-transactions-area"
+    >
+
+        <div class="wallet-transactions-header">
+
+            <div>
+
+                <span class="wallet-view-label">
+                    TRANSACTIONS
+                </span>
+
+                <h3>
+                    📋 سجل عمليات المحفظة
+                </h3>
+
+            </div>
+
+            <strong
+                id="wallet-transactions-count"
+            >
+                0 عملية
+            </strong>
+
+        </div>
+
+
+        <div class="wallet-search-box">
+
+            <input
+                type="search"
+                id="wallet-transactions-search"
+                placeholder="🔎 البحث في عمليات المحفظة..."
+            >
+
+        </div>
+
+
+        <div
+            id="wallet-transactions-list"
+            class="wallet-transactions-list"
+        ></div>
+
+    </div>
+
+</section>
+
+<!-- =================================================
+     INDEPENDENT SALES PAGE
+================================================== -->
+
+<section
+    id="independent-sales-section"
+    class="independent-sales-section"
+    style="display:none;"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-icon">
+            🛒
+        </div>
+
+        <div>
+
+            <span class="heading-label">
+                ACT SALES SYSTEM
+            </span>
+
+            <h2>
+                المبيعات
+            </h2>
+
+            <p>
+                إدارة عمليات البيع والفواتير والمرتجعات
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- SALES MAIN CARDS -->
+
+    <div class="independent-sales-grid">
+
+
+        <button
+            class="independent-sales-card"
+            type="button"
+            data-sales-view="new"
+        >
+
+            <span class="independent-sales-icon">
+                🧾
+            </span>
+
+            <strong>
+                بيع جديد
+            </strong>
+
+            <small>
+                إنشاء عملية بيع جديدة
+            </small>
+
+        </button>
+
+
+        <button
+            class="independent-sales-card"
+            type="button"
+            data-sales-view="history"
+        >
+
+            <span class="independent-sales-icon">
+                📋
+            </span>
+
+            <strong>
+                سجل المبيعات
+            </strong>
+
+            <small>
+                عرض عمليات البيع السابقة
+            </small>
+
+        </button>
+
+
+        <button
+            class="independent-sales-card"
+            type="button"
+            data-sales-view="returns"
+        >
+
+            <span class="independent-sales-icon">
+                ↩️
+            </span>
+
+            <strong>
+                المرتجعات
+            </strong>
+
+            <small>
+                إدارة المنتجات المرتجعة
+            </small>
+
+        </button>
+
+
+        <button
+            class="independent-sales-card"
+            type="button"
+            data-sales-view="reports"
+        >
+
+            <span class="independent-sales-icon">
+                📊
+            </span>
+
+            <strong>
+                تقارير المبيعات
+            </strong>
+
+            <small>
+                ملخص وإحصائيات المبيعات
+            </small>
+
+        </button>
+
+
+    </div>
+
+
+
+
+<!-- =================================================
+     NEW SALE
+================================================== -->
+
+<div
+    id="sales-view-new"
+    class="independent-sales-view sales-new-view"
+    style="display:none;"
+>
+
+    <div class="sales-view-header">
+
+        <div>
+
+            <span class="sales-view-label">
+                NEW SALE
+            </span>
+
+            <h3>
+                🧾 بيع جديد
+            </h3>
+
+            <p>
+                تسجيل عملية بيع وحساب المدفوع والمتبقي
+            </p>
+
+        </div>
+
+        <div class="sales-invoice-badge">
+
+            <span>
+                رقم الفاتورة
+            </span>
+
+            <strong id="new-sale-invoice-number">
+                تلقائي
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="sales-new-summary">
+
+        <div class="sales-mini-card">
+
+            <span>
+                عدد الأصناف
+            </span>
+
+            <strong id="new-sale-items-count">
+                1
+            </strong>
+
+        </div>
+
+
+        <div class="sales-mini-card">
+
+            <span>
+                الإجمالي
+            </span>
+
+            <strong id="new-sale-total">
+                0 جنيه
+            </strong>
+
+        </div>
+
+
+        <div class="sales-mini-card">
+
+            <span>
+                المدفوع
+            </span>
+
+            <strong id="new-sale-paid">
+                0 جنيه
+            </strong>
+
+        </div>
+
+
+        <div class="sales-mini-card">
+
+            <span>
+                المتبقي
+            </span>
+
+            <strong id="new-sale-due">
+                0 جنيه
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="sales-form-card">
+
+        <div class="sales-form-title">
+
+            <div class="sales-form-title-icon">
+                📦
+            </div>
+
+            <div>
+
+                <strong>
+                    بيانات المنتج والعميل
+                </strong>
+
+                <small>
+                    أدخل تفاصيل عملية البيع
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="sales-form-grid">
+
+
+            <div class="sales-field">
+
+                <label for="sale-product-name">
+                    اسم المنتج
+                </label>
+
+                <input
+                    type="text"
+                    id="sale-product-name"
+                    placeholder="📱 اسم الجهاز أو المنتج"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-serial">
+                    السيريال / IMEI
+                </label>
+
+                <input
+                    type="text"
+                    id="sale-serial"
+                    placeholder="🔢 السيريال أو IMEI"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-customer">
+                    اسم العميل
+                </label>
+
+                <input
+                    type="text"
+                    id="sale-customer"
+                    placeholder="👤 اسم العميل"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-phone">
+                    رقم الهاتف
+                </label>
+
+                <input
+                    type="text"
+                    id="sale-phone"
+                    placeholder="📞 رقم العميل"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-price">
+                    السعر
+                </label>
+
+                <input
+                    type="number"
+                    id="sale-price"
+                    min="0"
+                    step="0.01"
+                    placeholder="💰 سعر البيع"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-discount">
+                    الخصم
+                </label>
+
+                <input
+                    type="number"
+                    id="sale-discount"
+                    min="0"
+                    step="0.01"
+                    value="0"
+                    placeholder="🏷️ قيمة الخصم"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-paid">
+                    المبلغ المدفوع
+                </label>
+
+                <input
+                    type="number"
+                    id="sale-paid"
+                    min="0"
+                    step="0.01"
+                    value="0"
+                    placeholder="💵 المبلغ المدفوع"
+                >
+
+            </div>
+
+
+            <div class="sales-field">
+
+                <label for="sale-payment-method">
+                    طريقة الدفع
+                </label>
+
+                <select id="sale-payment-method">
+
+                    <option value="cash">
+                        💵 كاش
+                    </option>
+
+                    <option value="card">
+                        💳 بطاقة
+                    </option>
+
+                    <option value="transfer">
+                        🏦 تحويل
+                    </option>
+
+                    <option value="installment">
+                        📆 تقسيط
+                    </option>
+
+                    <option value="credit">
+                        🧾 آجل
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="sales-field sales-field-full">
+
+                <label for="sale-notes">
+                    ملاحظات البيع
+                </label>
+
+                <textarea
+                    id="sale-notes"
+                    rows="4"
+                    placeholder="📝 أي ملاحظات تخص عملية البيع..."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="sales-calculation-box">
+
+            <div>
+
+                <span>
+                    السعر
+                </span>
+
+                <strong id="sale-calculation-price">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>
+                    الخصم
+                </span>
+
+                <strong id="sale-calculation-discount">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>
+                    الإجمالي النهائي
+                </span>
+
+                <strong id="sale-calculation-total">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>
+                    المتبقي
+                </span>
+
+                <strong id="sale-calculation-due">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="sales-form-actions">
+
+            <button
+                id="clear-new-sale-button"
+                type="button"
+                class="sales-secondary-button"
+            >
+                🗑️ مسح البيانات
+            </button>
+
+            <button
+                id="save-new-sale-button"
+                type="button"
+                class="sales-primary-button"
+            >
+                💾 حفظ عملية البيع
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =================================================
+     SALES HISTORY
+================================================== -->
+
+<div
+    id="sales-view-history"
+    class="independent-sales-view"
+    style="display:none;"
+>
+
+    <div class="sales-view-header">
+
+        <div>
+
+            <span class="sales-view-label">
+                SALES HISTORY
+            </span>
+
+            <h3>
+                📋 سجل المبيعات
+            </h3>
+
+            <p>
+                جميع عمليات البيع المسجلة داخل النظام
+            </p>
+
+        </div>
+
+        <button
+            id="print-sales-history-button"
+            type="button"
+            class="sales-print-button"
+        >
+            🖨️ طباعة السجل
+        </button>
+
+    </div>
+
+
+    <div class="sales-history-summary">
+
+
+        <div class="sales-history-stat">
+
+            <span>
+                عدد المبيعات
+            </span>
+
+            <strong id="sales-history-count">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="sales-history-stat">
+
+            <span>
+                إجمالي المبيعات
+            </span>
+
+            <strong id="sales-history-total">
+                0 جنيه
+            </strong>
+
+        </div>
+
+
+        <div class="sales-history-stat">
+
+            <span>
+                إجمالي المدفوع
+            </span>
+
+            <strong id="sales-history-paid">
+                0 جنيه
+            </strong>
+
+        </div>
+
+
+        <div class="sales-history-stat">
+
+            <span>
+                إجمالي المتبقي
+            </span>
+
+            <strong id="sales-history-due">
+                0 جنيه
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="sales-history-tools">
+
+        <div class="sales-history-search">
+
+            <span>
+                🔎
+            </span>
+
+            <input
+                type="text"
+                id="sales-history-search"
+                placeholder="ابحث باسم المنتج أو العميل أو رقم الفاتورة"
+            >
+
+        </div>
+
+
+        <select id="sales-history-payment-filter">
+
+            <option value="all">
+                كل طرق الدفع
+            </option>
+
+            <option value="cash">
+                كاش
+            </option>
+
+            <option value="card">
+                بطاقة
+            </option>
+
+            <option value="transfer">
+                تحويل
+            </option>
+
+            <option value="installment">
+                تقسيط
+            </option>
+
+            <option value="credit">
+                آجل
+            </option>
+
+        </select>
+
+
+        <select id="sales-history-date-filter">
+
+            <option value="all">
+                كل التواريخ
+            </option>
+
+            <option value="today">
+                مبيعات اليوم
+            </option>
+
+            <option value="week">
+                آخر 7 أيام
+            </option>
+
+            <option value="month">
+                هذا الشهر
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="sales-table-wrapper">
+
+        <table class="sales-history-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        الفاتورة
+                    </th>
+
+                    <th>
+                        المنتج
+                    </th>
+
+                    <th>
+                        العميل
+                    </th>
+
+                    <th>
+                        السعر
+                    </th>
+
+                    <th>
+                        الخصم
+                    </th>
+
+                    <th>
+                        المدفوع
+                    </th>
+
+                    <th>
+                        المتبقي
+                    </th>
+
+                    <th>
+                        الدفع
+                    </th>
+
+                    <th>
+                        التاريخ
+                    </th>
+
+                    <th>
+                        الإجراءات
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="sales-history-list">
+
+                <tr class="sales-empty-row">
+
+                    <td colspan="10">
+
+                        <div class="sales-empty-state">
+
+                            <span>
+                                📋
+                            </span>
+
+                            <strong>
+                                لا توجد مبيعات حتى الآن
+                            </strong>
+
+                            <small>
+                                عند تسجيل عملية بيع ستظهر هنا
+                            </small>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- =================================================
+     RETURNS
+================================================== -->
+
+<div
+    id="sales-view-returns"
+    class="independent-sales-view"
+    style="display:none;"
+>
+
+    <div class="returns-header">
+
+        <div>
+
+            <span class="returns-label">
+                ACT RETURNS SYSTEM
+            </span>
+
+            <h3>
+                ↩️ إدارة المرتجعات
+            </h3>
+
+            <p>
+                تسجيل ومتابعة جميع المنتجات المرتجعة
+            </p>
+
+        </div>
+
+        <button
+            id="add-return-button"
+            type="button"
+            class="add-return-button"
+        >
+            ➕ إضافة مرتجع
+        </button>
+
+    </div>
+
+
+    <div
+        id="return-form"
+        class="return-form"
+        style="display:none;"
+    >
+
+        <div class="return-form-title">
+
+            <span>
+                ↩️
+            </span>
+
+            <div>
+
+                <strong>
+                    إضافة مرتجع جديد
+                </strong>
+
+                <small>
+                    أدخل بيانات المنتج المرتجع
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label>
+                نوع المرتجع
+            </label>
+
+            <div class="return-type-grid">
+
+                <button
+                    type="button"
+                    class="return-type-card"
+                    data-return-type="device"
+                >
+
+                    <span>
+                        📱
+                    </span>
+
+                    <strong>
+                        جهاز
+                    </strong>
+
+                    <small>
+                        هاتف أو جهاز تم بيعه
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="return-type-card"
+                    data-return-type="part"
+                >
+
+                    <span>
+                        🔧
+                    </span>
+
+                    <strong>
+                        قطعة
+                    </strong>
+
+                    <small>
+                        قطعة أو إكسسوار
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="return-type-card"
+                    data-return-type="other"
+                >
+
+                    <span>
+                        📦
+                    </span>
+
+                    <strong>
+                        أخرى
+                    </strong>
+
+                    <small>
+                        منتج آخر
+                    </small>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label for="return-item-name">
+                اسم المنتج
+            </label>
+
+            <input
+                type="text"
+                id="return-item-name"
+                placeholder="اكتب اسم المنتج المرتجع"
+            >
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label for="return-price">
+                السعر
+            </label>
+
+            <input
+                type="number"
+                id="return-price"
+                min="0"
+                step="0.01"
+                placeholder="سعر المنتج"
+            >
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label>
+                حالة المنتج بعد المرتجع
+            </label>
+
+            <div class="return-status-grid">
+
+                <button
+                    type="button"
+                    class="return-status-card"
+                    data-return-status="working"
+                >
+
+                    <span>
+                        🟢
+                    </span>
+
+                    <strong>
+                        شغال
+                    </strong>
+
+                    <small>
+                        يمكن استخدامه أو بيعه مرة أخرى
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="return-status-card"
+                    data-return-status="not-working"
+                >
+
+                    <span>
+                        🔴
+                    </span>
+
+                    <strong>
+                        مش شغال
+                    </strong>
+
+                    <small>
+                        غير صالح للبيع
+                    </small>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label for="return-reason">
+                سبب المرتجع
+            </label>
+
+            <textarea
+                id="return-reason"
+                rows="4"
+                placeholder="اكتب سبب إرجاع المنتج..."
+            ></textarea>
+
+        </div>
+
+
+        <div class="return-field">
+
+            <label for="return-customer">
+                اسم العميل (اختياري)
+            </label>
+
+            <input
+                type="text"
+                id="return-customer"
+                placeholder="يمكن تركه فارغًا"
+            >
+
+        </div>
+
+
+        <div class="return-actions">
+
+            <button
+                id="cancel-return-button"
+                type="button"
+                class="cancel-return-button"
+            >
+                إلغاء
+            </button>
+
+            <button
+                id="confirm-return-button"
+                type="button"
+                class="confirm-return-button"
+            >
+                ↩️ تأكيد المرتجع
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="returns-history">
+
+        <div class="returns-history-title">
+
+            <div>
+
+                <strong>
+                    📋 سجل المرتجعات
+                </strong>
+
+                <small>
+                    جميع المنتجات التي تم إرجاعها
+                </small>
+
+            </div>
+
+            <span
+                id="returns-count"
+                class="returns-count"
+            >
+                0 مرتجع
+            </span>
+
+        </div>
+
+
+        <div
+            id="returns-list"
+            class="returns-list"
+        >
+
+            <div
+                id="returns-empty"
+                class="returns-empty"
+            >
+
+                <span>
+                    ↩️
+                </span>
+
+                <strong>
+                    لا توجد مرتجعات حتى الآن
+                </strong>
+
+                <small>
+                    عند إضافة مرتجع سيظهر هنا
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- =================================================
+         SALES REPORTS
+    ================================================== -->
+
+    <div
+        id="sales-view-reports"
+        class="independent-sales-view"
+        style="display:none;"
+    >
+
+        <div class="sales-view-header">
+
+            <div>
+
+                <span class="sales-view-label">
+                    SALES REPORTS
+                </span>
+
+                <h3>
+                    📊 تقارير المبيعات
+                </h3>
+
+                <p>
+                    ملخص سريع لحركة المبيعات والمدفوعات والمتبقي
+                </p>
+
+            </div>
+
+            <button
+                id="print-sales-reports-button"
+                type="button"
+                class="sales-print-button"
+            >
+                🖨️ طباعة التقرير
+            </button>
+
+        </div>
+
+
+
+        <div class="sales-report-grid">
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    🛒
+                </div>
+
+                <span>
+                    مبيعات اليوم
+                </span>
+
+                <strong id="sales-report-today">
+                    0 جنيه
+                </strong>
+
+                <small>
+                    إجمالي قيمة مبيعات اليوم
+                </small>
+
+            </div>
+
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    📅
+                </div>
+
+                <span>
+                    مبيعات الشهر
+                </span>
+
+                <strong id="sales-report-month">
+                    0 جنيه
+                </strong>
+
+                <small>
+                    إجمالي مبيعات الشهر الحالي
+                </small>
+
+            </div>
+
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    💵
+                </div>
+
+                <span>
+                    إجمالي المدفوع
+                </span>
+
+                <strong id="sales-report-paid">
+                    0 جنيه
+                </strong>
+
+                <small>
+                    الأموال التي تم تحصيلها
+                </small>
+
+            </div>
+
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    🧾
+                </div>
+
+                <span>
+                    إجمالي المتبقي
+                </span>
+
+                <strong id="sales-report-due">
+                    0 جنيه
+                </strong>
+
+                <small>
+                    مبالغ مستحقة على العملاء
+                </small>
+
+            </div>
+
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    🏷️
+                </div>
+
+                <span>
+                    إجمالي الخصومات
+                </span>
+
+                <strong id="sales-report-discounts">
+                    0 جنيه
+                </strong>
+
+                <small>
+                    قيمة الخصومات المسجلة
+                </small>
+
+            </div>
+
+
+
+            <div class="sales-report-card">
+
+                <div class="sales-report-icon">
+                    🔢
+                </div>
+
+                <span>
+                    عدد عمليات البيع
+                </span>
+
+                <strong id="sales-report-count">
+                    0
+                </strong>
+
+                <small>
+                    إجمالي الفواتير
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="sales-report-panels">
+
+
+            <div class="sales-report-panel">
+
+                <div class="sales-report-panel-heading">
+
+                    <div>
+
+                        <strong>
+                            🏆 أكثر المنتجات مبيعًا
+                        </strong>
+
+                        <small>
+                            المنتجات حسب عدد عمليات البيع
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div id="sales-top-products">
+
+                    <div class="sales-report-empty">
+                        لا توجد بيانات مبيعات حتى الآن.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="sales-report-panel">
+
+                <div class="sales-report-panel-heading">
+
+                    <div>
+
+                        <strong>
+                            💳 طرق الدفع
+                        </strong>
+
+                        <small>
+                            توزيع عمليات البيع حسب طريقة الدفع
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div id="sales-payment-statistics">
+
+                    <div class="sales-report-empty">
+                        لا توجد بيانات مبيعات حتى الآن.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     ACT INDEPENDENT PURCHASES
+     قسم المشتريات المستقل
+================================================== -->
+
+<section
+    id="independent-purchases-section"
+    class="independent-purchases-section"
+    style="display: none;"
+    dir="rtl"
+>
+    <div class="section-heading">
+        <div class="heading-icon">📦</div>
+        <div>
+            <span class="heading-label">ACT INVENTORY SYSTEM</span>
+            <h2>إدارة المشتريات</h2>
+            <p>إدارة مشتريات المحل والموردين والمخزون</p>
+        </div>
+    </div>
+
+    <div class="purchases-hero">
+        <div>
+            <span class="purchases-eyebrow">PURCHASE CONTROL CENTER</span>
+            <h2>مشترياتك تحت السيطرة</h2>
+            <p>سجّل مشترياتك، وتابع التكلفة والموردين والكميات من مكان واحد.</p>
+        </div>
+        <div class="purchases-hero-icon">🛍️</div>
+    </div>
+
+    <div class="purchases-stats-grid">
+        <article class="purchases-stat-card">
+            <span>📥</span>
+            <small>إجمالي عمليات الشراء</small>
+            <strong id="ind-purchases-count">0</strong>
+        </article>
+        <article class="purchases-stat-card">
+            <span>💰</span>
+            <small>إجمالي قيمة المشتريات</small>
+            <strong id="ind-purchases-total">0 جنيه</strong>
+        </article>
+        <article class="purchases-stat-card">
+            <span>📦</span>
+            <small>إجمالي القطع المشتراة</small>
+            <strong id="ind-purchases-quantity">0</strong>
+        </article>
+    </div>
+
+    <div class="ind-purchases-category-grid">
+        <button type="button" class="ind-purchase-category active"
+                data-purchase-category="phones">
+            <span>📱</span>
+            <strong>تلفونات</strong>
+            <small>شراء أجهزة للمحل</small>
+        </button>
+
+        <button type="button" class="ind-purchase-category"
+                data-purchase-category="accessories">
+            <span>🎧</span>
+            <strong>إكسسوارات</strong>
+            <small>شواحن وسماعات وغيرها</small>
+        </button>
+
+        <button type="button" class="ind-purchase-category"
+                data-purchase-category="parts">
+            <span>🔧</span>
+            <strong>قطع غيار</strong>
+            <small>مكونات الصيانة</small>
+        </button>
+    </div>
+
+    <div class="ind-purchases-panel">
+        <div class="ind-purchases-panel-heading">
+            <div>
+                <h3>➕ تسجيل عملية شراء</h3>
+                <p>أدخل تفاصيل الفاتورة والمورد والمنتجات</p>
+            </div>
+        </div>
+
+        <form id="ind-purchase-form">
+            <input type="hidden" id="ind-purchase-category" value="phones">
+
+            <div class="ind-purchase-form-grid">
+                <label>
+                    اسم المنتج
+                    <input id="ind-purchase-product" type="text"
+                           placeholder="اسم الجهاز أو المنتج" required>
+                </label>
+
+                <label>
+                    المورد
+                    <input id="ind-purchase-supplier" type="text"
+                           placeholder="اسم المورد">
+                </label>
+
+                <label>
+                    الكمية
+                    <input id="ind-purchase-quantity" type="number"
+                           min="1" step="1" value="1" required>
+                </label>
+
+                <label>
+                    سعر القطعة
+                    <input id="ind-purchase-unit-price" type="number"
+                           min="0" step="0.01" placeholder="0.00" required>
+                </label>
+
+                <label>
+                    المدفوع
+                    <input id="ind-purchase-paid" type="number"
+                           min="0" step="0.01" placeholder="0.00" value="0">
+                </label>
+
+                <label>
+                    تاريخ الشراء
+                    <input id="ind-purchase-date" type="date" required>
+                </label>
+
+                <label class="ind-purchase-full-width">
+                    ملاحظات
+                    <textarea id="ind-purchase-notes"
+                              rows="3"
+                              placeholder="رقم الفاتورة أو تفاصيل إضافية"></textarea>
+                </label>
+            </div>
+
+            <div class="ind-purchase-total-preview">
+                <span>إجمالي قيمة العملية</span>
+                <strong id="ind-purchase-preview-total">0.00 جنيه</strong>
+            </div>
+
+            <button type="submit" class="ind-purchase-save-button">
+                💾 حفظ عملية الشراء
+            </button>
+        </form>
+    </div>
+
+    <div class="ind-purchases-panel">
+        <div class="ind-purchases-panel-heading">
+            <div>
+                <h3>📋 سجل المشتريات</h3>
+                <p>عمليات الشراء المسجلة في هذا القسم</p>
+            </div>
+        </div>
+
+        <input id="ind-purchases-search" type="search"
+               placeholder="ابحث باسم المنتج أو المورد..."
+               class="ind-purchases-search">
+
+        <div id="ind-purchases-list">
+            <div class="ind-purchases-empty">
+                لا توجد عمليات شراء معروضة حتى الآن.
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =================================================
+     EXTRA INLINE STYLES
+================================================== -->
+
+<style>
+
+/* =================================================
+   INDEPENDENT SALES
+================================================== */
+
+.independent-sales-section {
+    width: 100%;
+}
+
+.independent-sales-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.independent-sales-card {
+    min-height: 180px;
+    padding: 24px 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.045);
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    transition: .2s;
+}
+
+.independent-sales-card:hover,
+.independent-sales-card.active {
+    transform: translateY(-3px);
+    border-color: rgba(0,150,255,.55);
+    background: rgba(0,126,255,.12);
+}
+
+.independent-sales-icon {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.independent-sales-card strong {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.independent-sales-card small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.independent-sales-view {
+    padding: 24px;
+    margin-top: 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.035);
+}
+
+.independent-sales-view h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.independent-sales-view p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+
+
+/* =================================================
+   SALES VIEW HEADER
+================================================== */
+
+.sales-view-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.sales-view-label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.sales-view-header h3 {
+    margin: 0 0 6px;
+    font-size: 25px;
+    font-weight: 950;
+}
+
+.sales-view-header p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.sales-invoice-badge {
+    min-width: 150px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,150,255,.20);
+    background: rgba(0,126,255,.07);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.sales-invoice-badge span {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.sales-invoice-badge strong {
+    font-size: 15px;
+}
+
+
+
+/* =================================================
+   NEW SALE SUMMARY
+================================================== */
+
+.sales-new-summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.sales-mini-card {
+    min-height: 90px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.035);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.sales-mini-card span {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.sales-mini-card strong {
+    font-size: 20px;
+    font-weight: 950;
+}
+
+
+
+/* =================================================
+   SALES FORM
+================================================== */
+
+.sales-form-card {
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(0,0,0,.08);
+}
+
+.sales-form-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sales-form-title-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background: rgba(0,126,255,.12);
+}
+
+.sales-form-title div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sales-form-title strong {
+    font-size: 16px;
+}
+
+.sales-form-title small {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.sales-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.sales-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sales-field-full {
+    grid-column: 1 / -1;
+}
+
+.sales-field label {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sales-field input,
+.sales-field select,
+.sales-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.045);
+    color: inherit;
+    border-radius: 11px;
+    padding: 13px 14px;
+    outline: none;
+    font-family: inherit;
+    transition: .2s;
+}
+
+.sales-field input:focus,
+.sales-field select:focus,
+.sales-field textarea:focus {
+    border-color: rgba(0,150,255,.55);
+    box-shadow: 0 0 0 3px rgba(0,126,255,.08);
+}
+
+.sales-field textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+.sales-field select option {
+    background: #101722;
+    color: white;
+}
+
+
+
+/* =================================================
+   SALES CALCULATION
+================================================== */
+
+.sales-calculation-box {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,150,255,.12);
+    background: rgba(0,126,255,.055);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.sales-calculation-box > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sales-calculation-box span {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.sales-calculation-box strong {
+    font-size: 17px;
+    font-weight: 950;
+}
+
+.sales-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.sales-primary-button,
+.sales-secondary-button,
+.sales-print-button {
+    border: 0;
+    border-radius: 11px;
+    padding: 12px 18px;
+    font-family: inherit;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sales-primary-button {
+    background: rgba(0,126,255,.85);
+    color: white;
+}
+
+.sales-primary-button:hover {
+    transform: translateY(-2px);
+    background: rgba(0,126,255,1);
+}
+
+.sales-secondary-button {
+    background: rgba(255,255,255,.07);
+    color: inherit;
+    border: 1px solid rgba(255,255,255,.10);
+}
+
+.sales-secondary-button:hover,
+.sales-print-button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,150,255,.40);
+}
+
+.sales-print-button {
+    background: rgba(255,255,255,.06);
+    color: inherit;
+    border: 1px solid rgba(255,255,255,.10);
+}
+
+
+
+/* =================================================
+   SALES HISTORY
+================================================== */
+
+.sales-history-summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.sales-history-stat {
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.035);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sales-history-stat span {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.sales-history-stat strong {
+    font-size: 19px;
+    font-weight: 950;
+}
+
+.sales-history-tools {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 190px 190px;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.sales-history-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 13px;
+    min-height: 45px;
+    border-radius: 11px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(255,255,255,.04);
+}
+
+.sales-history-search span {
+    font-size: 16px;
+}
+
+.sales-history-search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+
+.sales-history-tools select {
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 11px;
+    background: rgba(255,255,255,.04);
+    color: inherit;
+    padding: 0 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.sales-history-tools option {
+    background: #101722;
+    color: white;
+}
+
+.sales-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.sales-history-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+.sales-history-table th,
+.sales-history-table td {
+    padding: 13px 12px;
+    text-align: right;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    white-space: nowrap;
+}
+
+.sales-history-table th {
+    background: rgba(255,255,255,.045);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.sales-history-table td {
+    font-size: 12px;
+}
+
+.sales-history-table tbody tr {
+    transition: .15s;
+}
+
+.sales-history-table tbody tr:hover {
+    background: rgba(0,126,255,.055);
+}
+
+.sales-empty-row:hover {
+    background: transparent !important;
+}
+
+.sales-empty-state {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    text-align: center;
+}
+
+.sales-empty-state span {
+    font-size: 38px;
+}
+
+.sales-empty-state strong {
+    font-size: 15px;
+}
+
+.sales-empty-state small {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+
+
+/* =================================================
+   REPORTS
+================================================== */
+
+.sales-report-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.sales-report-card {
+    min-height: 145px;
+    padding: 20px;
+    border-radius: 17px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.035);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: .2s;
+}
+
+.sales-report-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0,150,255,.35);
+}
+
+.sales-report-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    background: rgba(0,126,255,.10);
+    margin-bottom: 5px;
+}
+
+.sales-report-card span {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.sales-report-card strong {
+    font-size: 22px;
+    font-weight: 950;
+}
+
+.sales-report-card small {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.sales-report-panels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.sales-report-panel {
+    min-height: 230px;
+    padding: 20px;
+    border-radius: 17px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.035);
+}
+
+.sales-report-panel-heading {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.sales-report-panel-heading div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sales-report-panel-heading strong {
+    font-size: 15px;
+}
+
+.sales-report-panel-heading small {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.sales-report-empty {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* =================================================
+   HOME GRID
+================================================== */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.home-card {
+    min-height: 170px;
+    padding: 25px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.045);
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    transition: .2s;
+}
+
+.home-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0,150,255,.55);
+    background: rgba(0,126,255,.12);
+}
+
+.home-card-icon {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.home-card strong {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.home-card small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+
+
+/* =================================================
+   DASHBOARD
+================================================== */
+
+.dashboard-status-section,
+.dashboard-operations-section,
+.dashboard-summary-section,
+.dashboard-history-section {
+    width: 100%;
+    margin: 26px 0;
+}
+
+
+
+/* =================================================
+   DASHBOARD HEADINGS
+================================================== */
+
+.dashboard-status-title,
+.dashboard-block-heading,
+.dashboard-sections-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.dashboard-status-title > div:last-child,
+.dashboard-block-heading > div:last-child,
+.dashboard-sections-heading > div:last-child {
+    min-width: 0;
+}
+
+.dashboard-status-icon,
+.dashboard-block-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background: rgba(0,126,255,.12);
+    border: 1px solid rgba(0,150,255,.22);
+    box-shadow: 0 8px 30px rgba(0,0,0,.15);
+}
+
+.dashboard-status-title span,
+.dashboard-block-heading span,
+.dashboard-sections-heading span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+}
+
+.dashboard-status-title h2,
+.dashboard-block-heading h2,
+.dashboard-sections-heading h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.dashboard-block-heading p,
+.dashboard-sections-heading p {
+    margin: 5px 0 0;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+
+
+/* =================================================
+   STATUS
+================================================== */
+
+.dashboard-status-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+}
+
+.dashboard-status-card {
+    width: 100%;
+    min-height: 52px;
+    height: 52px;
+    padding: 7px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(255,255,255,.045);
+    box-shadow: 0 6px 20px rgba(0,0,0,.10);
+    transition: .2s;
+}
+
+.dashboard-status-card:hover {
+    transform: translateX(-3px);
+    border-color: rgba(0,150,255,.35);
+}
+
+.dashboard-status-card-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: rgba(255,255,255,.05);
+}
+
+.dashboard-status-card-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) auto auto;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-status-card-content strong {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.dashboard-status-card-content span {
+    font-size: 17px;
+    font-weight: 950;
+    white-space: nowrap;
+}
+
+.dashboard-status-card-content small {
+    color: var(--text-muted);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.maintenance-status-card {
+    border-right: 3px solid rgba(255,193,7,.65);
+}
+
+.ready-status-card {
+    border-right: 3px solid rgba(0,200,100,.65);
+}
+
+.stock-status-card {
+    border-right: 3px solid rgba(255,140,0,.65);
+}
+
+
+
+/* =================================================
+   LATEST OPERATIONS
+================================================== */
+
+.dashboard-operations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.dashboard-operation-card {
+    min-height: 82px;
+    height: 82px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(255,255,255,.045);
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 11px;
+    transition: .2s;
+    box-shadow: 0 7px 22px rgba(0,0,0,.10);
+}
+
+.dashboard-operation-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,150,255,.42);
+    background: rgba(0,126,255,.08);
+}
+
+.operation-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
+    background: transparent;
+}
+
+.operation-info {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 3px;
+    align-items: center;
+}
+
+.operation-info strong {
+    font-size: 13px;
+    font-weight: 900;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.operation-info b {
+    font-size: 15px;
+    font-weight: 950;
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.operation-info small {
+    color: var(--text-muted);
+    font-size: 10px;
+    white-space: nowrap;
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.withdrawal-operation {
+    border-right: 3px solid rgba(0,180,255,.55);
+}
+
+.expense-operation {
+    border-right: 3px solid rgba(255,90,90,.55);
+}
+
+.sale-operation {
+    border-right: 3px solid rgba(0,210,130,.55);
+}
+
+.deposit-operation {
+    border-right: 3px solid rgba(180,100,255,.55);
+}
+
+
+
+/* =================================================
+   SUMMARY
+================================================== */
+
+.dashboard-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.dashboard-summary-card {
+    min-height: 145px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(255,255,255,.045);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    transition: .2s;
+}
+
+.dashboard-summary-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0,150,255,.38);
+}
+
+.summary-card-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background: rgba(0,126,255,.10);
+}
+
+.dashboard-summary-card > div:last-child {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dashboard-summary-card span {
+    color: var(--text-muted);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.dashboard-summary-card strong {
+    font-size: 22px;
+    font-weight: 950;
+    line-height: 1.2;
+}
+
+.dashboard-summary-card small {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+
+
+/* =================================================
+   DAILY HISTORY
+================================================== */
+
+.dashboard-current-date {
+    width: fit-content;
+    min-width: 230px;
+    margin-bottom: 18px;
+    padding: 15px 20px;
+    border-radius: 17px;
+    border: 1px solid rgba(0,150,255,.20);
+    background: rgba(0,126,255,.07);
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.current-date-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    background: rgba(0,126,255,.12);
+}
+
+.dashboard-current-date > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dashboard-current-date span {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.dashboard-current-date strong {
+    font-size: 16px;
+}
+
+.dashboard-daily-history {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.dashboard-history-empty {
+    grid-column: 1 / -1;
+    min-height: 150px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px dashed rgba(255,255,255,.15);
+    background: rgba(255,255,255,.025);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.dashboard-history-empty > span {
+    font-size: 36px;
+}
+
+.dashboard-history-empty strong {
+    font-size: 16px;
+}
+
+.dashboard-history-empty small {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+
+
+/* =================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:1200px) {
+
+    .dashboard-summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .dashboard-daily-history {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sales-report-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media(max-width:900px) {
+
+    .dashboard-operations-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-daily-history {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-status-card-content {
+        grid-template-columns: 1fr auto;
+    }
+
+    .dashboard-status-card-content small {
+        display: none;
+    }
+
+    .independent-sales-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sales-new-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sales-history-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sales-history-tools {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sales-history-search {
+        grid-column: 1 / -1;
+    }
+
+    .sales-report-panels {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .sales-view-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sales-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sales-field-full {
+        grid-column: auto;
+    }
+
+    .sales-calculation-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sales-form-actions {
+        flex-direction: column;
+    }
+
+    .sales-primary-button,
+    .sales-secondary-button {
+        width: 100%;
+    }
+
+    .sales-report-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media(max-width:560px) {
+
+    .dashboard-operations-grid,
+    .dashboard-summary-grid,
+    .dashboard-daily-history,
+    .independent-sales-grid,
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-status-card {
+        min-height: 48px;
+        height: 48px;
+        padding: 6px 10px;
+    }
+
+    .dashboard-status-card-icon {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 16px;
+    }
+
+    .dashboard-status-card-content {
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+    }
+
+    .dashboard-status-card-content strong {
+        font-size: 12px;
+    }
+
+    .dashboard-status-card-content span {
+        font-size: 14px;
+    }
+
+    .dashboard-status-card-content small {
+        display: none;
+    }
+
+    .dashboard-operation-card {
+        min-height: 72px;
+        height: 72px;
+    }
+
+    .dashboard-summary-card {
+        min-height: 125px;
+    }
+
+    .independent-sales-card,
+    .home-card {
+        min-height: 145px;
+    }
+
+    .sales-new-summary,
+    .sales-history-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .sales-history-tools {
+        grid-template-columns: 1fr;
+    }
+
+    .sales-calculation-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+
+</style>
+
+
+
+<!-- =========================================
+     MY ACCOUNT - حسابي
+========================================= -->
+<section
+    id="account-section"
+    class="account-section"
+    style="display: none;"
+    dir="rtl"
+>
+    <!-- ACCOUNT HEADER -->
+    <div class="account-header">
+        <div>
+            <span class="account-eyebrow">PERSONAL CENTER</span>
+            <h2>👤 حسابي</h2>
+            <p>الملف الشخصي وإعدادات الحساب</p>
+        </div>
+
+        <span class="account-status">
+            ● حالة الحساب
+        </span>
+    </div>
+
+    <!-- ACCOUNT HOME -->
+    <div id="account-home-panel" class="account-home-panel">
+
+        <div class="account-welcome-card">
+            <div class="account-welcome-icon">👤</div>
+
+            <div class="account-welcome-info">
+                <h3>إدارة حسابك</h3>
+                <p>
+                    تابع ملفك الشخصي وأمان حسابك وحالة جلسة الدخول من مكان واحد.
+                </p>
+            </div>
+        </div>
+
+        <div class="account-menu-grid">
+
+            <!-- PROFILE -->
+            <button
+                type="button"
+                class="account-menu-card"
+                data-account-page="profile"
+            >
+                <span class="account-menu-icon">👤</span>
+
+                <span class="account-menu-text">
+                    <strong>الملف الشخصي</strong>
+                    <small>البيانات الشخصية والصورة</small>
+                </span>
+
+                <span class="account-menu-arrow">‹</span>
+            </button>
+
+            <!-- SECURITY -->
+            <button
+                type="button"
+                class="account-menu-card"
+                data-account-page="security"
+            >
+                <span class="account-menu-icon">🛡️</span>
+
+                <span class="account-menu-text">
+                    <strong>الأمان</strong>
+                    <small>تسجيل الدخول والحماية</small>
+                </span>
+
+                <span class="account-menu-arrow">‹</span>
+            </button>
+
+            <!-- ACCOUNT STATUS -->
+            <button
+                type="button"
+                class="account-menu-card"
+                data-account-page="status"
+            >
+                <span class="account-menu-icon">📡</span>
+
+                <span class="account-menu-text">
+                    <strong>حالة الحساب</strong>
+                    <small>حالة تسجيل الدخول وبيانات الحساب</small>
+                </span>
+
+                <span class="account-menu-arrow">‹</span>
+            </button>
+
+            <!-- ACCOUNT GUIDE -->
+            <button
+                type="button"
+                class="account-menu-card"
+                data-account-page="guide"
+            >
+                <span class="account-menu-icon">🗂️</span>
+
+                <span class="account-menu-text">
+                    <strong>دليل الحساب</strong>
+                    <small>إرشادات الملف الشخصي وحماية الحساب</small>
+                </span>
+
+                <span class="account-menu-arrow">‹</span>
+            </button>
+
+        </div>
+
+        <div class="account-home-note">
+            🔒 بياناتك وإعدادات حسابك في مكان واحد.
+        </div>
+    </div>
+
+    <!-- =====================================
+         PROFILE PAGE
+    ====================================== -->
+    <div
+        id="account-profile-page"
+        class="account-subpage"
+        hidden
+    >
+        <button
+            type="button"
+            class="account-back-button"
+            data-account-back
+        >
+            → الرجوع إلى حسابي
+        </button>
+
+        <div class="account-subpage-heading">
+            <h3>👤 الملف الشخصي</h3>
+            <p>البيانات الشخصية والصورة ومعلومات الحساب</p>
+        </div>
+
+        <div class="account-profile-card">
+            <div class="account-avatar-area">
+                <img
+                    id="account-photo-preview"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='60' fill='%23182338'/%3E%3Ctext x='60' y='76' font-size='52' text-anchor='middle' fill='%2394a3b8'%3E👤%3C/text%3E%3C/svg%3E"
+                    alt="الصورة الشخصية"
+                >
+
+                <label
+                    for="account-photo-input"
+                    class="account-photo-button"
+                >
+                    📷 تغيير الصورة
+                </label>
+
+                <input
+                    id="account-photo-input"
+                    type="file"
+                    accept="image/*"
+                    hidden
+                >
+            </div>
+
+            <div class="account-profile-info">
+                <h3 id="account-display-name">اسم المستخدم</h3>
+                <p id="account-display-email">البريد الإلكتروني</p>
+                <span>الملف الشخصي</span>
+            </div>
+        </div>
+
+        <form id="account-profile-form">
+
+            <div class="account-card">
+                <h3>🪪 البيانات الشخصية</h3>
+
+                <div class="account-form-grid">
+                    <label>
+                        الاسم الكامل
+                        <input
+                            id="account-full-name"
+                            type="text"
+                            autocomplete="name"
+                            placeholder="اكتب اسمك الكامل"
+                        >
+                    </label>
+
+                    <label>
+                        اسم الشهرة
+                        <input
+                            id="account-nickname"
+                            type="text"
+                            placeholder="الاسم الذي تفضله"
+                        >
+                    </label>
+
+                    <label>
+                        تاريخ الميلاد
+                        <input
+                            id="account-birth-date"
+                            type="date"
+                        >
+                    </label>
+
+                    <label>
+                        العمر
+                        <input
+                            id="account-age"
+                            type="text"
+                            placeholder="يُحسب تلقائيًا"
+                            readonly
+                        >
+                    </label>
+
+                    <label>
+                        النوع (اختياري)
+                        <select id="account-gender">
+                            <option value="">لم يتم التحديد</option>
+                            <option value="male">ذكر</option>
+                            <option value="female">أنثى</option>
+                            <option value="other">أفضل عدم التحديد</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        الوظيفة
+                        <input
+                            id="account-job"
+                            type="text"
+                            placeholder="وظيفتك"
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <div class="account-card">
+                <h3>📞 بيانات الاتصال</h3>
+
+                <div class="account-form-grid">
+                    <label>
+                        البريد الإلكتروني
+                        <input
+                            id="account-email"
+                            type="email"
+                            readonly
+                        >
+                    </label>
+
+                    <label>
+                        رقم الهاتف
+                        <input
+                            id="account-phone"
+                            type="tel"
+                            autocomplete="tel"
+                            placeholder="رقم هاتفك"
+                        >
+                    </label>
+
+                    <label>
+                        الدولة
+                        <input
+                            id="account-country"
+                            type="text"
+                            placeholder="الدولة"
+                        >
+                    </label>
+
+                    <label>
+                        المدينة
+                        <input
+                            id="account-city"
+                            type="text"
+                            placeholder="المدينة"
+                        >
+                    </label>
+
+                    <label class="account-full-width">
+                        العنوان
+                        <input
+                            id="account-address"
+                            type="text"
+                            autocomplete="street-address"
+                            placeholder="العنوان (اختياري)"
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <div class="account-card">
+                <h3>✨ معلومات إضافية</h3>
+
+                <div class="account-form-grid">
+                    <label>
+                        جهة العمل
+                        <input
+                            id="account-workplace"
+                            type="text"
+                            placeholder="اسم الشركة أو مكان العمل"
+                        >
+                    </label>
+
+                    <label>
+                        الموقع الإلكتروني
+                        <input
+                            id="account-website"
+                            type="url"
+                            placeholder="https://"
+                        >
+                    </label>
+
+                    <label class="account-full-width">
+                        نبذة عنك
+                        <textarea
+                            id="account-bio"
+                            rows="4"
+                            placeholder="اكتب نبذة مختصرة عنك"
+                        ></textarea>
+                    </label>
+                </div>
+            </div>
+
+            <div class="account-card">
+                <h3>🔐 معلومات الحساب</h3>
+
+                <div class="account-details-list">
+                    <div>
+                        <span>طريقة تسجيل الدخول</span>
+                        <strong id="account-login-method">—</strong>
+                    </div>
+
+                    <div>
+                        <span>معرّف الحساب</span>
+                        <strong id="account-user-id">—</strong>
+                    </div>
+
+                    <div>
+                        <span>تاريخ إنشاء الحساب</span>
+                        <strong id="account-created-at">—</strong>
+                    </div>
+                </div>
+
+                <p class="account-security-note">
+                    🔒 كلمة المرور لا تُعرض داخل صفحة حسابي.
+                </p>
+            </div>
+
+            <div class="account-actions">
+                <button
+                    type="submit"
+                    class="account-save-button"
+                >
+                    💾 حفظ بياناتي
+                </button>
+
+                <button
+                    type="button"
+                    id="account-reset-button"
+                    class="account-reset-button"
+                >
+                    ↩️ إلغاء التعديلات
+                </button>
+
+                <button
+                    type="button"
+                    id="account-logout-button"
+                    class="account-logout-button"
+                >
+                    🚪 تسجيل الخروج
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- =====================================
+         SECURITY PAGE
+    ====================================== -->
+    <div
+        id="account-security-page"
+        class="account-subpage"
+        hidden
+    >
+        <button
+            type="button"
+            class="account-back-button"
+            data-account-back
+        >
+            → الرجوع إلى حسابي
+        </button>
+
+        <div class="account-subpage-heading">
+            <h3>🛡️ الأمان</h3>
+            <p>معلومات تسجيل الدخول والحماية</p>
+        </div>
+
+        <div class="account-card">
+            <h3>🔑 معلومات تسجيل الدخول</h3>
+
+            <div class="account-details-list">
+                <div>
+                    <span>طريقة تسجيل الدخول</span>
+                    <strong id="account-security-login-method">—</strong>
+                </div>
+
+                <div>
+                    <span>البريد الإلكتروني</span>
+                    <strong id="account-security-email">—</strong>
+                </div>
+
+                <div>
+                    <span>معرّف الحساب</span>
+                    <strong id="account-security-user-id">—</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="account-card">
+            <h3>🔒 حماية الحساب</h3>
+
+            <div class="account-feature-row">
+                <div>
+                    <strong>كلمة المرور</strong>
+                    <p>تُدار من خلال مزود تسجيل الدخول.</p>
+                </div>
+
+                <span class="account-feature-status">
+                    حسب طريقة الدخول
+                </span>
+            </div>
+
+            <div class="account-feature-row">
+                <div>
+                    <strong>التحقق بخطوتين</strong>
+                    <p>
+                        لا يتم تفعيل هذه الميزة إلا بعد إعدادها
+                        وربطها فعليًا بمزود تسجيل الدخول.
+                    </p>
+                </div>
+
+                <span class="account-feature-status">
+                    غير مفعّل من هذه الصفحة
+                </span>
+            </div>
+
+            <p class="account-security-note">
+                لا تدخل كلمة المرور في أي حقل داخل هذه الصفحة.
+                إعدادات الحماية الفعلية تعتمد على خدمة تسجيل الدخول.
+            </p>
+        </div>
+
+        <div class="account-card">
+            <h3>🚪 جلسة الحساب</h3>
+            <p>
+                يمكنك تسجيل الخروج من الحساب الحالي.
+            </p>
+
+            <button
+                type="button"
+                class="account-logout-button"
+                id="account-security-logout"
+            >
+                تسجيل الخروج
+            </button>
+        </div>
+    </div>
+
+    <!-- =====================================
+         ACCOUNT STATUS PAGE
+    ====================================== -->
+    <div
+        id="account-status-page"
+        class="account-subpage"
+        hidden
+    >
+        <button type="button" class="account-back-button" data-account-back>
+            → الرجوع إلى حسابي
+        </button>
+
+        <div class="account-subpage-heading">
+            <h3>📡 حالة الحساب</h3>
+            <p>مراجعة حالة جلسة الدخول ومعلومات حسابك الحالي</p>
+        </div>
+
+        <div class="account-card">
+            <h3>🟢 حالة الجلسة</h3>
+            <div class="account-details-list">
+                <div><span>حالة الحساب</span><strong id="account-status-session">مسجل الدخول</strong></div>
+                <div><span>البريد الإلكتروني</span><strong id="account-status-email">—</strong></div>
+                <div><span>طريقة تسجيل الدخول</span><strong id="account-status-method">—</strong></div>
+                <div><span>تاريخ إنشاء الحساب</span><strong id="account-status-created">—</strong></div>
+            </div>
+            <p class="account-security-note">تعرض هذه الصفحة معلومات الحساب المتاحة داخل البرنامج فقط، ولا تغيّر بيانات تسجيل الدخول.</p>
+        </div>
+
+        <div class="account-card">
+            <h3>🆔 معرّف الحساب</h3>
+            <p id="account-status-uid" style="overflow-wrap:anywhere;">—</p>
+            <button type="button" class="account-reset-button" id="account-copy-uid">نسخ معرّف الحساب</button>
+            <span id="account-copy-uid-status" class="account-security-note" aria-live="polite"></span>
+        </div>
+    </div>
+
+    <!-- =====================================
+         ACCOUNT GUIDE PAGE
+    ====================================== -->
+    <div
+        id="account-guide-page"
+        class="account-subpage"
+        hidden
+    >
+        <button type="button" class="account-back-button" data-account-back>
+            → الرجوع إلى حسابي
+        </button>
+
+        <div class="account-subpage-heading">
+            <h3>🗂️ دليل الحساب</h3>
+            <p>إرشادات سريعة لاستخدام أدوات حسابك بأمان</p>
+        </div>
+
+        <div class="account-card">
+            <h3>👤 الملف الشخصي</h3>
+            <p>راجع اسمك وبيانات الاتصال ومعلومات العمل من صفحة الملف الشخصي، ثم احفظ التغييرات بعد مراجعتها.</p>
+            <button type="button" class="account-reset-button" data-account-open="profile">فتح الملف الشخصي</button>
+        </div>
+
+        <div class="account-card">
+            <h3>🛡️ حماية الحساب</h3>
+            <p>استخدم بريدك الصحيح، ولا تشارك كلمة المرور أو رموز التحقق مع أي شخص. سجّل الخروج عند استخدام جهاز ليس ملكك.</p>
+            <button type="button" class="account-reset-button" data-account-open="security">فتح إعدادات الأمان</button>
+        </div>
+
+        <div class="account-card">
+            <h3>⚙️ إعدادات البرنامج</h3>
+            <p>تغيير اللغة والمظهر وإدارة النسخ الاحتياطي موجودة في قسم إعدادات البرنامج، وليس داخل حسابي.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- =========================================
+     ACCOUNT PAGE NAVIGATION
+========================================= -->
+<script>
+(function () {
+    "use strict";
+
+    const accountSection =
+        document.getElementById("account-section");
+
+    if (!accountSection) {
+        console.error(
+            "Account navigation: account-section not found."
+        );
+        return;
+    }
+
+    if (accountSection.dataset.pagesReady === "true") {
+        return;
+    }
+
+    const homePanel =
+        document.getElementById("account-home-panel");
+
+    if (!homePanel) {
+        console.error(
+            "Account navigation: account-home-panel not found."
+        );
+        return;
+    }
+
+    const pages = {
+        profile: document.getElementById("account-profile-page"),
+        security: document.getElementById("account-security-page"),
+        status: document.getElementById("account-status-page"),
+        guide: document.getElementById("account-guide-page")
+    };
+
+    accountSection.dataset.pagesReady = "true";
+
+    function hidePages() {
+        Object.values(pages).forEach(function (page) {
+            if (page) {
+                page.hidden = true;
+            }
+        });
+    }
+
+    function showAccountHome() {
+        hidePages();
+        homePanel.hidden = false;
+    }
+
+    function showAccountPage(pageName) {
+        const selectedPage = pages[pageName];
+
+        if (!selectedPage) {
+            return;
+        }
+
+        hidePages();
+        homePanel.hidden = true;
+        selectedPage.hidden = false;
+
+        if (pageName === "security") {
+            const method =
+                document.getElementById("account-login-method");
+
+            const email =
+                document.getElementById("account-email");
+
+            const userId =
+                document.getElementById("account-user-id");
+
+            const securityMethod =
+                document.getElementById(
+                    "account-security-login-method"
+                );
+
+            const securityEmail =
+                document.getElementById(
+                    "account-security-email"
+                );
+
+            const securityUserId =
+                document.getElementById(
+                    "account-security-user-id"
+                );
+
+            if (securityMethod) {
+                securityMethod.textContent =
+                    method?.textContent?.trim() || "—";
+            }
+
+            if (securityEmail) {
+                securityEmail.textContent =
+                    email?.value?.trim() || "—";
+            }
+
+            if (securityUserId) {
+                securityUserId.textContent =
+                    userId?.textContent?.trim() || "—";
+            }
+        }
+
+        if (pageName === "status") {
+            const readText = (id) =>
+                document.getElementById(id)?.textContent?.trim() || "—";
+
+            const values = {
+                "account-status-email": document.getElementById("account-email")?.value?.trim() || "—",
+                "account-status-method": readText("account-login-method"),
+                "account-status-created": readText("account-created-at"),
+                "account-status-uid": readText("account-user-id")
+            };
+
+            Object.entries(values).forEach(([id, value]) => {
+                const node = document.getElementById(id);
+                if (node) node.textContent = value;
+            });
+        }
+    }
+
+    accountSection.addEventListener(
+        "click",
+        function (event) {
+            const target = event.target;
+
+            if (!(target instanceof Element)) {
+                return;
+            }
+
+            const pageButton =
+                target.closest("[data-account-page]");
+
+            const backButton =
+                target.closest("[data-account-back]");
+
+            if (pageButton) {
+                showAccountPage(
+                    pageButton.dataset.accountPage
+                );
+                return;
+            }
+
+            if (backButton) {
+                showAccountHome();
+            }
+        }
+    );
+
+    const profileLogout =
+        document.getElementById(
+            "account-logout-button"
+        );
+
+    const securityLogout =
+        document.getElementById(
+            "account-security-logout"
+        );
+
+    if (securityLogout && profileLogout) {
+        securityLogout.addEventListener(
+            "click",
+            function () {
+                profileLogout.click();
+            }
+        );
+    }
+
+    accountSection.addEventListener("click", function (event) {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const openButton = target.closest("[data-account-open]");
+        if (openButton) {
+            showAccountPage(openButton.dataset.accountOpen);
+            return;
+        }
+
+        if (target.closest("#account-copy-uid")) {
+            const uid = document.getElementById("account-status-uid")?.textContent?.trim() || "";
+            const status = document.getElementById("account-copy-uid-status");
+            if (!uid || uid === "—") {
+                if (status) status.textContent = "معرّف الحساب غير متاح حاليًا.";
+                return;
+            }
+            if (navigator.clipboard?.writeText) {
+                navigator.clipboard.writeText(uid).then(() => {
+                    if (status) status.textContent = "تم نسخ معرّف الحساب.";
+                }).catch(() => {
+                    if (status) status.textContent = "تعذر النسخ تلقائيًا؛ يمكنك تحديد المعرّف ونسخه.";
+                });
+            } else if (status) {
+                status.textContent = "ميزة النسخ غير متاحة في هذا المتصفح.";
+            }
+        }
+    });
+
+    showAccountHome();
+
+})();
+</script>
+
+<script type="module" src="./script.js"></script>
+
+</body>
+</html>
